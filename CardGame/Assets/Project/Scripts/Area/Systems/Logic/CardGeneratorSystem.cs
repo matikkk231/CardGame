@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
 using Project.Scripts.Area.Components.Logic;
+using Project.Scripts.Area.Components.View.GameObjectComponent;
 using Project.Scripts.Core.ECS.Entity;
 using Project.Scripts.Core.ECS.System;
 using Unity.Mathematics;
-using UnityEngine;
 
 namespace Project.Scripts.Area.Systems.Logic
 {
@@ -43,6 +43,10 @@ namespace Project.Scripts.Area.Systems.Logic
                             x - Math.Abs(fieldComponent.MinRelativeCenterPositionX),
                             y - Math.Abs(fieldComponent.MinRelativeCenterPositionY));
                         card.AddComponent(new PositionRelativeFieldCenterComponent(currentPositionRelativeFieldCenter));
+                        int2 positionWhereCardShouldBeInstantiated = new int2(currentPositionRelativeFieldCenter.x * 35,
+                            currentPositionRelativeFieldCenter.y * 52);
+                        card.AddComponent(new NeedInstantiatingPrefab(PrefabTypesId.Card,
+                            positionWhereCardShouldBeInstantiated));
                         fieldComponent.IsThisPositionEmpty[x, y] = false;
                     }
                 }
