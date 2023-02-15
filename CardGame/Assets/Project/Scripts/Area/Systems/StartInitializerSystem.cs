@@ -1,27 +1,28 @@
-using Project.Scripts.Area.Components;
+using Project.Scripts.Area.Components.Logic;
 using Project.Scripts.Core.ECS.Entity;
 using Project.Scripts.Core.ECS.System;
 
-namespace Project.Scripts.Area.Systems
+namespace Project.Scripts.Area.Systems.Logic
 {
     public class StartInitializerSystem : ISystem
     {
-        private readonly IEntityManager _entityManager;
-        private bool _isFirstInitialized;
+        private IEntityManager _entityManager;
+        private bool _initializedFirst;
 
         public StartInitializerSystem(IEntityManager entityManager)
         {
             _entityManager = entityManager;
-            _isFirstInitialized = true;
+            _initializedFirst = true;
         }
 
         public void Execute()
         {
-            if (_isFirstInitialized)
+            if (_initializedFirst)
             {
-                var entity = _entityManager.CreateEntity();
-                entity.Components.Add(new NotifierPrefabComponent());
-                _isFirstInitialized = false;
+                var field = _entityManager.CreateEntity();
+                field.AddComponent(new FieldComponent(1, 1, -1, -1));
+
+                _initializedFirst = false;
             }
         }
     }
