@@ -14,7 +14,7 @@ namespace Project.Scripts.Area.Systems.View.PrefabInstantiator
         private readonly List<Type> _needfulGroup;
         private readonly List<PrefabType> _prefabTypes;
 
-        public PrefabInstantiatorSystem(IEntityManager entityManager, List<PrefabType> prefabTypes)
+        public PrefabInstantiatorSystem(IEntityManager entityManager, List<PrefabType> prefabTypes )
         {
             _prefabTypes = prefabTypes;
             _entityManager = entityManager;
@@ -39,6 +39,7 @@ namespace Project.Scripts.Area.Systems.View.PrefabInstantiator
                         Vector3 newPositionOfObject =
                             new Vector3(newPositionOfObjectX, newPositionOfObjectY, 0);
                         gameObject.transform.position = newPositionOfObject;
+
 
                         entity.AddComponent(new GameObjectComponent(gameObject));
                         entity.RemoveComponent(needInstantiatingPrefabComponent.GetType());

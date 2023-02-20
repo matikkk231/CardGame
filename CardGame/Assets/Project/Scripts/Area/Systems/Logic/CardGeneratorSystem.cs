@@ -36,9 +36,11 @@ namespace Project.Scripts.Area.Systems.Logic
             {
                 for (int x = 0; x <= fieldComponent.MaxPositionX; x++)
                 {
-                    if (fieldComponent.IsThisPositionEmpty[x, y])
+                    if (fieldComponent.PositionsWithCard[x, y] == null)
                     {
                         var card = _entityManager.CreateEntity();
+                        card.AddComponent(new CardComponent());
+                        card.AddComponent(new EmptyCardComponent());
                         int2 currentPositionRelativeFieldCenter = new int2(
                             x - Math.Abs(fieldComponent.MinRelativeCenterPositionX),
                             y - Math.Abs(fieldComponent.MinRelativeCenterPositionY));
@@ -47,7 +49,6 @@ namespace Project.Scripts.Area.Systems.Logic
                             currentPositionRelativeFieldCenter.y * 52);
                         card.AddComponent(new NeedInstantiatingPrefab(PrefabTypesId.Card,
                             positionWhereCardShouldBeInstantiated));
-                        fieldComponent.IsThisPositionEmpty[x, y] = false;
                     }
                 }
             }

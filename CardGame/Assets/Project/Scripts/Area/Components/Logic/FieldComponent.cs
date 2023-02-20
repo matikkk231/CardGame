@@ -1,5 +1,6 @@
 using System;
 using Project.Scripts.Core.ECS.Component;
+using Project.Scripts.Core.ECS.Entity;
 using Unity.Mathematics;
 
 namespace Project.Scripts.Area.Components.Logic
@@ -14,7 +15,7 @@ namespace Project.Scripts.Area.Components.Logic
         public readonly int MaxPositionX;
         public readonly int MaxPositionY;
 
-        public bool[,] IsThisPositionEmpty;
+        public IEntity[,] PositionsWithCard;
 
 
         public FieldComponent(int maxRelativeCenterPositionX, int maxRelativeCenterPositionY,
@@ -29,14 +30,14 @@ namespace Project.Scripts.Area.Components.Logic
             MaxPositionX = Math.Abs(MinRelativeCenterPositionX) + MaxRelativeCenterPositionX;
             MaxPositionY = Math.Abs(MinRelativeCenterPositionY) + MaxRelativeCenterPositionY;
 
-            IsThisPositionEmpty = new bool[MaxPositionX + centerPosition,
+            PositionsWithCard = new Entity[MaxPositionX + centerPosition,
                 MaxPositionY + centerPosition];
 
             for (int x = 0; x <= MaxPositionX; x++)
             {
                 for (int y = 0; y <= MaxPositionY; y++)
                 {
-                    IsThisPositionEmpty[x, y] = true;
+                    PositionsWithCard[x, y] = null;
                 }
             }
         }

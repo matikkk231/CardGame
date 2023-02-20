@@ -34,8 +34,9 @@ namespace Project.Scripts.Core.ECS.Entity
                 if (amountOfComponentMatches == amountOfComponentMatchesShouldBe)
                 {
                     needfulEntities.Add(entity);
-                    amountOfComponentMatches = 0;
                 }
+
+                amountOfComponentMatches = 0;
             }
 
             return needfulEntities;
