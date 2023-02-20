@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9009807146718217717}
     m_Modifications:
+    - target: {fileID: 579304638493719380, guid: a2be15c3c708e284d98d2bfdd3086060, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3396020345465910473, guid: a2be15c3c708e284d98d2bfdd3086060, type: 3}
       propertyPath: m_Name
       value: HealthUI
@@ -94,6 +98,10 @@ PrefabInstance:
     - target: {fileID: 7908149711776740755, guid: a2be15c3c708e284d98d2bfdd3086060, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8989317533215259986, guid: a2be15c3c708e284d98d2bfdd3086060, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2be15c3c708e284d98d2bfdd3086060, type: 3}
