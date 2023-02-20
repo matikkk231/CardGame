@@ -157,6 +157,11 @@ MonoBehaviour:
     Prefab: {fileID: 3506241250349997740, guid: 8694161a12a1b9c4aaebcefbd88ab46d, type: 3}
   - Id: 1
     Prefab: {fileID: 8957161849911250225, guid: 4436199ad9c504a46b2c7540dc7f7277, type: 3}
+  - Id: 2
+    Prefab: {fileID: 8957161849911250225, guid: 4436199ad9c504a46b2c7540dc7f7277, type: 3}
+  _monsterConfigs:
+  - {fileID: 11400000, guid: 6f4d4844155d6164aa3f7f3adf54b008, type: 2}
+  - {fileID: 11400000, guid: 33e18ed2856c8d6438e284d45fdc41b0, type: 2}
 --- !u!4 &768563007
 Transform:
   m_ObjectHideFlags: 0

@@ -4,7 +4,6 @@ using Project.Scripts.Area.Components.Logic;
 using Project.Scripts.Area.Components.View.GameObjectComponent;
 using Project.Scripts.Core.ECS.Entity;
 using Project.Scripts.Core.ECS.System;
-using Unity.Mathematics;
 using UnityEngine;
 
 namespace Project.Scripts.Area.Systems.Logic

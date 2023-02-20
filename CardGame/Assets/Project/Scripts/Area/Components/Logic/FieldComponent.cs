@@ -1,7 +1,6 @@
 using System;
 using Project.Scripts.Core.ECS.Component;
 using Project.Scripts.Core.ECS.Entity;
-using Unity.Mathematics;
 
 namespace Project.Scripts.Area.Components.Logic
 {

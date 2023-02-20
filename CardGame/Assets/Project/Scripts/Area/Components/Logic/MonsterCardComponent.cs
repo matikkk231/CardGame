@@ -2,7 +2,7 @@ using Project.Scripts.Core.ECS.Component;
 
 namespace Project.Scripts.Area.Components.Logic
 {
-    public class InteractableComponent : IComponent
+    public class MonsterCardComponent : IComponent
     {
     }
 }

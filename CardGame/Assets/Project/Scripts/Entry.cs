@@ -1,5 +1,5 @@
-using System;
 using System.Collections.Generic;
+using Project.Scripts.Area.Configs;
 using Project.Scripts.Area.Systems.Logic;
 using Project.Scripts.Area.Systems.Logic.View;
 using Project.Scripts.Area.Systems.View.PrefabInstantiator;
@@ -12,9 +12,11 @@ namespace Project.Scripts
     public class Entry : MonoBehaviour
     {
         [SerializeField] private List<PrefabType> _prefabTypes;
+        [SerializeField] private List<MonsterConfig> _monsterConfigs;
+        [SerializeField] private Sprite _playerImage;
 
         private IEntityManager _entityManager;
-        
+
         private ISystem _startInitializerSystem;
         private ISystem _cardGeneratorSystem;
         private ISystem _prefabInstantiatorSystem;
@@ -25,14 +27,15 @@ namespace Project.Scripts
         private ISystem _interactingWithEmptyCardsSystem;
         private ISystem _destroyingCardsSystem;
         private ISystem _movementSystem;
+        private ISystem _interactingWithMonsterCardSystem;
 
         private void Start()
         {
             _entityManager = new EntityManager();
-            
-            _startInitializerSystem = new StartInitializerSystem(_entityManager);
-            _cardGeneratorSystem = new CardGeneratorSystem(_entityManager);
-            _prefabInstantiatorSystem = new PrefabInstantiatorSystem(_entityManager, _prefabTypes);
+
+            _startInitializerSystem = new StartInitializerSystem(_entityManager, _playerImage);
+            _cardGeneratorSystem = new CardGeneratorSystem(_entityManager, _monsterConfigs);
+            _prefabInstantiatorSystem = new CardPrefabInstantiatorSystem(_entityManager, _prefabTypes);
             _healthViewSystem = new HealthViewSystem(_entityManager);
             _checkingAbilityToInteractSystem = new CheckingAbilityToInteractSystem(_entityManager);
             _checkingInteractingTrySystem = new CheckingInteractingTrySystem(_entityManager);
@@ -40,6 +43,7 @@ namespace Project.Scripts
             _interactingWithEmptyCardsSystem = new InteractingWithEmptyCardsSystem(_entityManager);
             _destroyingCardsSystem = new DestroyCardSystem(_entityManager);
             _movementSystem = new MovingCardsSystem(_entityManager);
+            _interactingWithMonsterCardSystem = new InteractingWithMonsterSystem(_entityManager);
         }
 
         private void Update()
@@ -52,7 +56,10 @@ namespace Project.Scripts
             _checkingAbilityToInteractSystem.Execute();
 
             _checkingInteractingTrySystem.Execute();
+            
             _interactingWithEmptyCardsSystem.Execute();
+            _interactingWithMonsterCardSystem.Execute();
+            
             _destroyingCardsSystem.Execute();
             _movementSystem.Execute();
             _fieldManagerSystem.Execute();

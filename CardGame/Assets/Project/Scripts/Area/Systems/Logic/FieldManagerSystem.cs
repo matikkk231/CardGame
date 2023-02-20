@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using Project.Scripts.Area.Components.Logic;
 using Project.Scripts.Core.ECS.Entity;
 using Project.Scripts.Core.ECS.System;
-using Unity.Mathematics;
 
 namespace Project.Scripts.Area.Systems.Logic
 {

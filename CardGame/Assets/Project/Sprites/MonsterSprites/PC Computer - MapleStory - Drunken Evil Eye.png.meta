@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -103,7 +103,532 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Drunken Evil Eye_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 357
+        width: 97
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21b553e0e219b0f49a10a272d04b27f6
+      internalID: 922900276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Drunken Evil Eye_1
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 357
+        width: 87
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4cca4662a8f7814ebed046d3719b249
+      internalID: -1667941195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Drunken Evil Eye_2
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 357
+        width: 89
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dc2e798e99b3c640a1e940736b2683f
+      internalID: 414099108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Drunken Evil Eye_3
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 271
+        width: 94
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9661f114847267642840256507cac7e2
+      internalID: 2144471887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Drunken Evil Eye_4
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 271
+        width: 81
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fb8f87cbe723e04ea86954dd7f4dff1
+      internalID: -1957525683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Drunken Evil Eye_5
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 271
+        width: 83
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26ddc3b77f3d0e843bb7d0a3f9271807
+      internalID: -1990828979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Drunken Evil Eye_6
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 271
+        width: 99
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a08e54c2d4860b49aa3006029c589f4
+      internalID: -1555200787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Drunken Evil Eye_7
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 178
+        width: 85
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 354a2f4d167f9064085f8072c360694f
+      internalID: -139834630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Drunken Evil Eye_8
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 150
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4933300e434bbcf4ba0fa800f80c67cf
+      internalID: 2111960464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Drunken Evil Eye_9
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 159
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b1c4d8480147874b9042ee816675724
+      internalID: 228634624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Drunken Evil Eye_10
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 159
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33498e986de5b7747b6190f2eb5acedf
+      internalID: -218957812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Drunken Evil Eye_11
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 162
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 463e6f2782c63ea42b126cde2c55ad68
+      internalID: 891561316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Drunken Evil Eye_12
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 159
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a04b6100c1276fa499dd949cfa5c26e1
+      internalID: 235981884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Drunken Evil Eye_13
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 162
+        width: 33
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d12589814f5e4c4f960305e8df91984
+      internalID: -1203759896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Drunken Evil Eye_14
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 94
+        width: 87
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fec53bf24513e6444a9a8149462ac923
+      internalID: 342522887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Drunken Evil Eye_15
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 143
+        width: 33
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d68120fb2828bf641b0f29adf8782223
+      internalID: 744010153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Drunken Evil Eye_16
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 143
+        width: 47
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbfedd59fa5c674418c48f21fcd47c60
+      internalID: 665593596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Drunken Evil Eye_17
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 143
+        width: 4
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13e9f4b358700e746840185866b5c3d1
+      internalID: -1251788192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Drunken Evil Eye_18
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 143
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc5fb5ca3c16e7949b50e5f91703891e
+      internalID: 853339348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Drunken Evil Eye_19
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 143
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b84b0c6818fe204a9301a91c830a07b
+      internalID: -709079053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Drunken Evil Eye_20
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 143
+        width: 28
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b759df8f072fd874ca313d2afd6461ec
+      internalID: -1451130180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Drunken Evil Eye_21
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 122
+        width: 38
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3ca0da7a49c36940af63f48f3f29dba
+      internalID: -1981005401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Drunken Evil Eye_22
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 16
+        width: 98
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c616dfcf9f1a14d479fb462dbe13c291
+      internalID: -480691659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Drunken Evil Eye_23
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 16
+        width: 115
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e114eb1e0d0b1f40ab769ca27c3b90b
+      internalID: 949767087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Drunken Evil Eye_24
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 16
+        width: 123
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d50ea25a39a4c014baf080ea8fee220a
+      internalID: 439870733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -114,7 +639,32 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PC Computer - MapleStory - Drunken Evil Eye_14: 342522887
+      PC Computer - MapleStory - Drunken Evil Eye_24: 439870733
+      PC Computer - MapleStory - Drunken Evil Eye_3: 2144471887
+      PC Computer - MapleStory - Drunken Evil Eye_7: -139834630
+      PC Computer - MapleStory - Drunken Evil Eye_10: -218957812
+      PC Computer - MapleStory - Drunken Evil Eye_15: 744010153
+      PC Computer - MapleStory - Drunken Evil Eye_22: -480691659
+      PC Computer - MapleStory - Drunken Evil Eye_17: -1251788192
+      PC Computer - MapleStory - Drunken Evil Eye_13: -1203759896
+      PC Computer - MapleStory - Drunken Evil Eye_1: -1667941195
+      PC Computer - MapleStory - Drunken Evil Eye_16: 665593596
+      PC Computer - MapleStory - Drunken Evil Eye_12: 235981884
+      PC Computer - MapleStory - Drunken Evil Eye_9: 228634624
+      PC Computer - MapleStory - Drunken Evil Eye_6: -1555200787
+      PC Computer - MapleStory - Drunken Evil Eye_19: -709079053
+      PC Computer - MapleStory - Drunken Evil Eye_11: 891561316
+      PC Computer - MapleStory - Drunken Evil Eye_2: 414099108
+      PC Computer - MapleStory - Drunken Evil Eye_21: -1981005401
+      PC Computer - MapleStory - Drunken Evil Eye_20: -1451130180
+      PC Computer - MapleStory - Drunken Evil Eye_18: 853339348
+      PC Computer - MapleStory - Drunken Evil Eye_5: -1990828979
+      PC Computer - MapleStory - Drunken Evil Eye_8: 2111960464
+      PC Computer - MapleStory - Drunken Evil Eye_23: 949767087
+      PC Computer - MapleStory - Drunken Evil Eye_0: 922900276
+      PC Computer - MapleStory - Drunken Evil Eye_4: -1957525683
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

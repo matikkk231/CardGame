@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 31761727519998066}
   - component: {fileID: 716031260371506597}
   - component: {fileID: 8578178175268379234}
+  - component: {fileID: 310100592808130385}
   m_Layer: 0
   m_Name: Card
   m_TagString: Untagged
@@ -74,6 +75,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.2, y: 13.7}
   m_EdgeRadius: 0
+--- !u!114 &310100592808130385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3506241250349997740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b57a4360a40f480ea26d7b0b15a56876, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ContentImageRenderer: {fileID: 5214311657345921404}
 --- !u!1 &4470684480592390214
 GameObject:
   m_ObjectHideFlags: 0
@@ -231,7 +245,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e15709dca5c34cc42be756eb5d71427c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -239,6 +253,6 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
