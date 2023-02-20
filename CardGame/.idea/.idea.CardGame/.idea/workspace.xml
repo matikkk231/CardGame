@@ -2,37 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65dd1439-b731-44fc-b582-f7c3def29879" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Components/Logic/MonsterCardComponent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Components/Logic/MonsterCardComponent.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Components/View/ContentImageView.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Components/View/ContentImageView.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Configs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Configs/MonsterConfig.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Configs/MonsterConfig.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/Logic/InteractingWithMonsterSystem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/Logic/InteractingWithMonsterSystem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Components/Logic/FallingComponent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Components/Logic/FallingComponent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/Logic/FallingCardsSystem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/Logic/FallingCardsSystem.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Prefabs/Card.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Prefabs/Card.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Prefabs/PlayerCard.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Prefabs/PlayerCard.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Components/Logic/EmptyCardComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Components/Logic/EmptyCardComponent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Components/Logic/FieldComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Components/Logic/FieldComponent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Components/Logic/InteractProcessingComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Components/Logic/InteractProcessingComponent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Components/Logic/InteractableComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Components/Logic/InteractableComponent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Components/Logic/NeedToBeDestroyedComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Components/Logic/NeedToBeDestroyedComponent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Components/Logic/PlayerCardComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Components/Logic/PlayerCardComponent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Components/View/CardClicked.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Components/View/CardClicked.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Components/View/GameObjectComponent/PrefabTypesId.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Components/View/GameObjectComponent/PrefabTypesId.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Components/View/NeedInstantiatingPrefab.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Components/View/NeedInstantiatingCardPrefab.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Components/View/NeedInstantiatingPrefab.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Components/View/NeedInstantiatingCardPrefab.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/Logic/CardGeneratorSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/Logic/CardGeneratorSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/Logic/DestroyCardSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/Logic/DestroyCardSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/Logic/InteractingWithEmptyCardsSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/Logic/InteractingWithEmptyCardsSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/StartInitializerSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/StartInitializerSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/View/PrefabInstantiator/PrefabInstantiatorSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/View/PrefabInstantiator/CardPrefabInstantiatorSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/View/PrefabInstantiator/PrefabInstantiatorSystem.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/View/PrefabInstantiator/CardPrefabInstantiatorSystem.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Entry.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Entry.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Sprites/MonsterSprites/PC Computer - MapleStory - Drunken Evil Eye.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Sprites/MonsterSprites/PC Computer - MapleStory - Drunken Evil Eye.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,13 +135,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/Logic/CardGeneratorSystem.cs</url>
-          <line>75</line>
+          <line>76</line>
           <properties documentPath="C:\Users\matik\OneDrive\Документы\GitHub\CardGame\CardGame\Assets\Project\Scripts\Area\Systems\Logic\CardGeneratorSystem.cs" initialLine="76" containingFunctionPresentation="method 'CreateMonsterCard'">
             <startOffsets>
-              <option value="3166" />
+              <option value="3221" />
             </startOffsets>
             <endOffsets>
-              <option value="3167" />
+              <option value="3222" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="33" />
