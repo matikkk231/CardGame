@@ -1,0 +1,1465 @@
+fileFormatVersion: 2
+guid: 45aa125684dfbb74aa2c09903dee55c3
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 848
+        width: 63
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef34216c4d7abc04dbb44035460e62e0
+      internalID: 1629539375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_1
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 848
+        width: 61
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fbf88e1e67d6eb4bbb9ae05d8184428
+      internalID: -1188303127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_2
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 848
+        width: 61
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ccedb73860bba64c8ff84546cf92cb0
+      internalID: 1179113027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_3
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 848
+        width: 61
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97c109d5f47cb9e489a5303b71443228
+      internalID: 1715947813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_4
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 848
+        width: 62
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8bb8f04c063c6e4fa8c54510eb9d36d
+      internalID: 915751190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_5
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 848
+        width: 65
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d41b0f7b7e95e54eb5a2da24b975973
+      internalID: 1884367138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_6
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 750
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31d0adff30619a34eb1914484b336598
+      internalID: 1119061542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_7
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 750
+        width: 86
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54377faa902144c41bbc98179562831d
+      internalID: 463871452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_8
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 750
+        width: 83
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b19a63fdbb7d6a45941d32b145e335c
+      internalID: -101883001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_9
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 750
+        width: 79
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee9195064be9b5a4f9508752fc5582aa
+      internalID: 849844270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_10
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 750
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b22d9d9eab3073a4ba3e7c6933dc5795
+      internalID: -793234239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_11
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 750
+        width: 81
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbfea14c082cdc445ad227eae9857354
+      internalID: 1985306816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_12
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 644
+        width: 92
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c59303dec5e8a464b899dc370948c066
+      internalID: 244670831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_13
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 521
+        width: 158
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 022cb99e111c4fe4488b3a74768f166b
+      internalID: 1028490818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_14
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 521
+        width: 159
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 344e3c1f2f5c433468cc72ed270e5b49
+      internalID: 558941657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_15
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 521
+        width: 160
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10937a0d735452a4a963f7712ac556d9
+      internalID: -1088137110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_16
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 521
+        width: 152
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f04ec064e5999204cb4b48669e564e9b
+      internalID: 1324409064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_17
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 521
+        width: 89
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9a0e7c092a2fbc49b10089817f2c6d8
+      internalID: -1974819138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_18
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 521
+        width: 91
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de26df2c558c58d429764c49c27bbe12
+      internalID: -283348854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_19
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 521
+        width: 81
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83d0e8317012dff43a1e4065be5261c4
+      internalID: -1626687909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_20
+      rect:
+        serializedVersion: 2
+        x: 1143
+        y: 521
+        width: 81
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f92558ee0923b344fad421e5e0967a24
+      internalID: -244794778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_21
+      rect:
+        serializedVersion: 2
+        x: 1241
+        y: 521
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ceeab18229264d41a5f26e65d022e73
+      internalID: 611129234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_22
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 377
+        width: 84
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcf496648f1559342ba042cfd4c8cb6f
+      internalID: -840880792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_23
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 377
+        width: 88
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b864c03701af0594c9bd9f223212ff49
+      internalID: 1270833248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_24
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 377
+        width: 84
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6518b6f18813ec40812a85ae310d067
+      internalID: 1258524817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_25
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 377
+        width: 88
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36421a35aaac82b479753b6a028323eb
+      internalID: -1941633818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_26
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 377
+        width: 84
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0950e5eb786016843bca8285391f639b
+      internalID: 800786539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_27
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 377
+        width: 88
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b77de479f7d8c4419ca217a044c9650
+      internalID: -1888758881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_28
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 377
+        width: 84
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d05572d045f4da54c80183c929937dcd
+      internalID: 937091907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_29
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 377
+        width: 114
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5673ddb018b857040adbee22470bd10e
+      internalID: 1981636724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_30
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 377
+        width: 110
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 459e8821ac1a7a4419d74845e141099f
+      internalID: -569316891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_31
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 377
+        width: 114
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7455e569095e064d8b5de25c7e31ef4
+      internalID: -359767754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_32
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 377
+        width: 108
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 470fdc61f5249724c9feafa400dfdb51
+      internalID: -932562041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_33
+      rect:
+        serializedVersion: 2
+        x: 1303
+        y: 377
+        width: 112
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a997402dc1ef564c9cde6e31bcfc1b3
+      internalID: -1256438787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_34
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 241
+        width: 99
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0a39a5cdedb05046b052ed9b21c82d5
+      internalID: 1881516094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_35
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 241
+        width: 80
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fd4bb922e725f545b74af4e9dc87449
+      internalID: -9075015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_36
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 113
+        width: 74
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3908ed0f4f17994b98d0ded82cbd724
+      internalID: -688543822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_37
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 113
+        width: 79
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27028f337b3a4f34b8d6576321af99fd
+      internalID: 1019710008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_38
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 113
+        width: 59
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfd6a3ba03913a54e9773677e388cadc
+      internalID: -225112185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_39
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 118
+        width: 57
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fe6e134d4fd3184b9cf15522a0b873d
+      internalID: -623920158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_40
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 117
+        width: 53
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f03e7211e82c01b4198d2471896237ff
+      internalID: 1773998464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_41
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 129
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b66151b9f65bdd478f2201d3d161693
+      internalID: -971195403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_42
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 118
+        width: 40
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91473abde73c0c9489d6750e2ffd7dd6
+      internalID: 2010464585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_43
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 159
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a56f8cee133bee4c8f2df4d71962ae5
+      internalID: -603828113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_44
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 155
+        width: 20
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59371ab4ddc516348b4ee3831b6866b6
+      internalID: -652636891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_45
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 117
+        width: 102
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20bfa49da6247a949b180ffc8cea9c6f
+      internalID: 1700652861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_46
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 123
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25c633a4a5586224bb3e95261c15ce01
+      internalID: -1757867826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_47
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 127
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ff82e99913166e4c93930fdedcd90d8
+      internalID: -529742881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_48
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 45
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5feb02a46b9d4714baf1e94455288a5a
+      internalID: -340371547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_49
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 45
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64d8c1a0a26810c44b43e1ddf2186061
+      internalID: -1934743217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_50
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 48
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f2178bc881b1514995d954ec16b01d3
+      internalID: 1084263163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_51
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 45
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a530bf02e5137b44a1bc736b7630fac
+      internalID: -196829481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_52
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 48
+        width: 33
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfd2cb486501f9048a0acc127395341b
+      internalID: -852250386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_53
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 36
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 736c091386c742e41bdc03d7a9c9beb8
+      internalID: 239513060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_54
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 29
+        width: 33
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc2ad28df1d9a504298a55e488da5623
+      internalID: 1233918866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_55
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 29
+        width: 47
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9685d68d7afa93846a861cf1c2bde378
+      internalID: -1816311984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_56
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 29
+        width: 4
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9318b4802a97884b83fd8c7ac165084
+      internalID: -1205956217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_57
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 29
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dfb80e84b49c0743884cfb5aba1a379
+      internalID: 90436388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_58
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 29
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05817023bbfef3c4193342db43cfa2f6
+      internalID: 1105656210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_59
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 29
+        width: 28
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab38a3fe92d61fd4f92d94e95b4666ca
+      internalID: -1827800267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Mist Knight_60
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 8
+        width: 38
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af60863dd3fa34f47ac5753d2963e0a6
+      internalID: -1574922106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      PC Computer - MapleStory - Mist Knight_40: 1773998464
+      PC Computer - MapleStory - Mist Knight_35: -9075015
+      PC Computer - MapleStory - Mist Knight_41: -971195403
+      PC Computer - MapleStory - Mist Knight_14: 558941657
+      PC Computer - MapleStory - Mist Knight_46: -1757867826
+      PC Computer - MapleStory - Mist Knight_4: 915751190
+      PC Computer - MapleStory - Mist Knight_9: 849844270
+      PC Computer - MapleStory - Mist Knight_57: 90436388
+      PC Computer - MapleStory - Mist Knight_6: 1119061542
+      PC Computer - MapleStory - Mist Knight_18: -283348854
+      PC Computer - MapleStory - Mist Knight_28: 937091907
+      PC Computer - MapleStory - Mist Knight_11: 1985306816
+      PC Computer - MapleStory - Mist Knight_53: 239513060
+      PC Computer - MapleStory - Mist Knight_31: -359767754
+      PC Computer - MapleStory - Mist Knight_23: 1270833248
+      PC Computer - MapleStory - Mist Knight_54: 1233918866
+      PC Computer - MapleStory - Mist Knight_20: -244794778
+      PC Computer - MapleStory - Mist Knight_39: -623920158
+      PC Computer - MapleStory - Mist Knight_25: -1941633818
+      PC Computer - MapleStory - Mist Knight_47: -529742881
+      PC Computer - MapleStory - Mist Knight_51: -196829481
+      PC Computer - MapleStory - Mist Knight_5: 1884367138
+      PC Computer - MapleStory - Mist Knight_58: 1105656210
+      PC Computer - MapleStory - Mist Knight_29: 1981636724
+      PC Computer - MapleStory - Mist Knight_59: -1827800267
+      PC Computer - MapleStory - Mist Knight_2: 1179113027
+      PC Computer - MapleStory - Mist Knight_21: 611129234
+      PC Computer - MapleStory - Mist Knight_49: -1934743217
+      PC Computer - MapleStory - Mist Knight_27: -1888758881
+      PC Computer - MapleStory - Mist Knight_1: -1188303127
+      PC Computer - MapleStory - Mist Knight_45: 1700652861
+      PC Computer - MapleStory - Mist Knight_12: 244670831
+      PC Computer - MapleStory - Mist Knight_30: -569316891
+      PC Computer - MapleStory - Mist Knight_24: 1258524817
+      PC Computer - MapleStory - Mist Knight_55: -1816311984
+      PC Computer - MapleStory - Mist Knight_3: 1715947813
+      PC Computer - MapleStory - Mist Knight_38: -225112185
+      PC Computer - MapleStory - Mist Knight_42: 2010464585
+      PC Computer - MapleStory - Mist Knight_26: 800786539
+      PC Computer - MapleStory - Mist Knight_7: 463871452
+      PC Computer - MapleStory - Mist Knight_52: -852250386
+      PC Computer - MapleStory - Mist Knight_50: 1084263163
+      PC Computer - MapleStory - Mist Knight_19: -1626687909
+      PC Computer - MapleStory - Mist Knight_13: 1028490818
+      PC Computer - MapleStory - Mist Knight_37: 1019710008
+      PC Computer - MapleStory - Mist Knight_15: -1088137110
+      PC Computer - MapleStory - Mist Knight_16: 1324409064
+      PC Computer - MapleStory - Mist Knight_0: 1629539375
+      PC Computer - MapleStory - Mist Knight_56: -1205956217
+      PC Computer - MapleStory - Mist Knight_34: 1881516094
+      PC Computer - MapleStory - Mist Knight_33: -1256438787
+      PC Computer - MapleStory - Mist Knight_22: -840880792
+      PC Computer - MapleStory - Mist Knight_32: -932562041
+      PC Computer - MapleStory - Mist Knight_36: -688543822
+      PC Computer - MapleStory - Mist Knight_10: -793234239
+      PC Computer - MapleStory - Mist Knight_8: -101883001
+      PC Computer - MapleStory - Mist Knight_43: -603828113
+      PC Computer - MapleStory - Mist Knight_17: -1974819138
+      PC Computer - MapleStory - Mist Knight_44: -652636891
+      PC Computer - MapleStory - Mist Knight_60: -1574922106
+      PC Computer - MapleStory - Mist Knight_48: -340371547
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
