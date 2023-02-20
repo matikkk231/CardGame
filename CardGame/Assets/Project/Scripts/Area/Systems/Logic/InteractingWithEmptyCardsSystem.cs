@@ -8,10 +8,10 @@ namespace Project.Scripts.Area.Systems.Logic
 {
     public class InteractingWithEmptyCardsSystem : ISystem
     {
-        private IEntityManager _entityManager;
-        private List<Type> _groupOfEmptyCardComponents;
-        private List<Type> _groupOfPlayerCardComponents;
-        private List<Type> _groupOfInteractableCards;
+        private readonly IEntityManager _entityManager;
+        private readonly List<Type> _groupOfEmptyCardComponents;
+        private readonly List<Type> _groupOfPlayerCardComponents;
+        private readonly List<Type> _groupOfInteractableCards;
 
         public InteractingWithEmptyCardsSystem(IEntityManager entityManager)
         {

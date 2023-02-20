@@ -2,9 +2,11 @@ using System;
 using System.Collections.Generic;
 using Project.Scripts.Area.Components.Logic;
 using Project.Scripts.Area.Components.View.GameObjectComponent;
+using Project.Scripts.Area.Configs;
 using Project.Scripts.Core.ECS.Entity;
 using Project.Scripts.Core.ECS.System;
 using Unity.Mathematics;
+using Random = Unity.Mathematics.Random;
 
 namespace Project.Scripts.Area.Systems.Logic
 {
@@ -12,13 +14,15 @@ namespace Project.Scripts.Area.Systems.Logic
     {
         private readonly IEntityManager _entityManager;
         private readonly List<Type> _fieldComponentType;
+        private readonly List<MonsterConfig> _monsterConfigs;
 
-        public CardGeneratorSystem(IEntityManager entityManager)
+        public CardGeneratorSystem(IEntityManager entityManager, List<MonsterConfig> monsterConfigs)
         {
             _entityManager = entityManager;
 
             _fieldComponentType = new List<Type>();
             _fieldComponentType.Add(typeof(FieldComponent));
+            _monsterConfigs = monsterConfigs;
         }
 
         public void Execute()
@@ -38,20 +42,58 @@ namespace Project.Scripts.Area.Systems.Logic
                 {
                     if (fieldComponent.PositionsWithCard[x, y] == null)
                     {
-                        var card = _entityManager.CreateEntity();
-                        card.AddComponent(new CardComponent());
-                        card.AddComponent(new EmptyCardComponent());
-                        int2 currentPositionRelativeFieldCenter = new int2(
-                            x - Math.Abs(fieldComponent.MinRelativeCenterPositionX),
-                            y - Math.Abs(fieldComponent.MinRelativeCenterPositionY));
-                        card.AddComponent(new PositionRelativeFieldCenterComponent(currentPositionRelativeFieldCenter));
-                        int2 positionWhereCardShouldBeInstantiated = new int2(currentPositionRelativeFieldCenter.x * 35,
-                            currentPositionRelativeFieldCenter.y * 52);
-                        card.AddComponent(new NeedInstantiatingPrefab(PrefabTypesId.Card,
-                            positionWhereCardShouldBeInstantiated));
+                        var randomNumber = UnityEngine.Random.Range(1, 3);
+                        switch (randomNumber)
+                        {
+                            case 1:
+                                CreateEmptyCard(fieldComponent, x, y);
+                                break;
+                            case 2:
+                                CreateMonsterCard(fieldComponent, x, y);
+                                break;
+                        }
                     }
                 }
             }
+        }
+
+        private void CreateEmptyCard(FieldComponent fieldComponent, int x, int y)
+        {
+            var card = _entityManager.CreateEntity();
+            card.AddComponent(new CardComponent());
+            card.AddComponent(new EmptyCardComponent());
+            int2 currentPositionRelativeFieldCenter = new int2(
+                x - Math.Abs(fieldComponent.MinRelativeCenterPositionX),
+                y - Math.Abs(fieldComponent.MinRelativeCenterPositionY));
+            card.AddComponent(new PositionRelativeFieldCenterComponent(currentPositionRelativeFieldCenter));
+            int2 positionWhereCardShouldBeInstantiated = new int2(currentPositionRelativeFieldCenter.x * 35,
+                currentPositionRelativeFieldCenter.y * 52);
+            card.AddComponent(new NeedInstantiatingCardPrefab(PrefabTypesId.Card,
+                positionWhereCardShouldBeInstantiated, null));
+        }
+
+        private void CreateMonsterCard(FieldComponent fieldComponent, int x, int y)
+        {
+            var monsterNumber = UnityEngine.Random.Range(0, _monsterConfigs.Count);
+
+            var monsterHp = UnityEngine.Random.Range(_monsterConfigs[monsterNumber].MinHp,
+                _monsterConfigs[monsterNumber].MaxHp);
+
+            var monsterSprite = _monsterConfigs[monsterNumber].MonsterImage;
+
+
+            var card = _entityManager.CreateEntity();
+            card.AddComponent(new CardComponent());
+            card.AddComponent(new MonsterCardComponent());
+            int2 currentPositionRelativeFieldCenter = new int2(
+                x - Math.Abs(fieldComponent.MinRelativeCenterPositionX),
+                y - Math.Abs(fieldComponent.MinRelativeCenterPositionY));
+            card.AddComponent(new PositionRelativeFieldCenterComponent(currentPositionRelativeFieldCenter));
+            int2 positionWhereCardShouldBeInstantiated = new int2(currentPositionRelativeFieldCenter.x * 35,
+                currentPositionRelativeFieldCenter.y * 52);
+            card.AddComponent(new NeedInstantiatingCardPrefab(PrefabTypesId.MonsterCard,
+                positionWhereCardShouldBeInstantiated, monsterSprite));
+            card.AddComponent(new HealthComponent(monsterHp));
         }
     }
 }

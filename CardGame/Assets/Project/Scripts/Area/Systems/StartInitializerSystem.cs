@@ -11,11 +11,13 @@ namespace Project.Scripts.Area.Systems.Logic
     {
         private IEntityManager _entityManager;
         private bool _initializedFirst;
+        private Sprite _playersCardSprite;
 
-        public StartInitializerSystem(IEntityManager entityManager)
+        public StartInitializerSystem(IEntityManager entityManager, Sprite playersCardSprite)
         {
             _entityManager = entityManager;
             _initializedFirst = true;
+            _playersCardSprite = playersCardSprite;
         }
 
         public void Execute()
@@ -34,7 +36,7 @@ namespace Project.Scripts.Area.Systems.Logic
                 playerCard.AddComponent(new PositionRelativeFieldCenterComponent(new int2(0, 0)));
                 playerCard.AddComponent(new PlayerCardComponent());
                 int2 cardPosition = new int2(0, 0);
-                playerCard.AddComponent(new NeedInstantiatingPrefab(PrefabTypesId.PlayerCard, cardPosition));
+                playerCard.AddComponent(new NeedInstantiatingCardPrefab(PrefabTypesId.PlayerCard, cardPosition, _playersCardSprite));
 
                 _initializedFirst = false;
             }
