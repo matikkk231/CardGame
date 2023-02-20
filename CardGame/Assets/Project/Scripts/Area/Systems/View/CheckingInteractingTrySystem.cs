@@ -1,0 +1,47 @@
+using System;
+using System.Collections.Generic;
+using Project.Scripts.Area.Components.Logic;
+using Project.Scripts.Area.Components.View.GameObjectComponent;
+using Project.Scripts.Core.ECS.Entity;
+using Project.Scripts.Core.ECS.System;
+using UnityEngine;
+
+namespace Project.Scripts.Area.Systems.Logic.View
+{
+    public class CheckingInteractingTrySystem : ISystem
+    {
+        private IEntityManager _entityManager;
+        private List<Type> _groupOfComponents;
+
+        public CheckingInteractingTrySystem(IEntityManager entityManager)
+        {
+            _entityManager = entityManager;
+            _groupOfComponents = new List<Type>();
+            _groupOfComponents.Add(typeof(GameObjectComponent));
+            _groupOfComponents.Add(typeof(CardComponent));
+        }
+
+        public void Execute()
+        {
+            var cards = _entityManager.GetEntitiesOfGroup(_groupOfComponents);
+            foreach (var card in cards)
+            {
+                var gameObjectComponent = (GameObjectComponent)card.GetComponent(typeof(GameObjectComponent));
+                var cardClicked = (CardClicked)gameObjectComponent.GameObject.GetComponent(typeof(CardClicked));
+                if (cardClicked.IsCardClicked)
+                {
+                    var interactableComponent = (InteractableComponent)card.GetComponent(typeof(InteractableComponent));
+                    if (interactableComponent != null)
+                    {
+                        card.AddComponent(new InteractProcessingComponent());
+                        card.RemoveComponent(typeof(InteractableComponent));
+                        cardClicked.IsCardClicked = false;
+                        break;
+                    }
+
+                    cardClicked.IsCardClicked = false;
+                }
+            }
+        }
+    }
+}
