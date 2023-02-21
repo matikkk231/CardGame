@@ -73,6 +73,7 @@ namespace Project.Scripts
             _interactingWithEmptyCardsSystem.Execute();
             _interactingWithMonsterCardSystem.Execute();
             _interactingWithPotionCardSystem.Execute();
+            
             _turnDoneNotifierSystem.Execute();
 
             _destroyingCardsSystem.Execute();
@@ -81,12 +82,12 @@ namespace Project.Scripts
             _fieldManagerSystem.Execute();
             _fallingSystem.Execute();
             _movementSystem.Execute();
-            _fieldManagerSystem.Execute();
 
             _healingStatusProcessingSystem.Execute();
             _turnFinishedNotifierSystem.Execute();
             
             _showingImpactSystem.Execute();
+            _fieldManagerSystem.Execute();
         }
     }
 }
