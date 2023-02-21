@@ -33,10 +33,6 @@ namespace Project.Scripts.Area.Systems.Logic
             var monsters = _entityManager.GetEntitiesOfGroup(_monsters);
             var players = _entityManager.GetEntitiesOfGroup(_players);
             var interactableCards = _entityManager.GetEntitiesOfGroup(_groupOfInteractableCards);
-            foreach (var interactableCard in interactableCards)
-            {
-                interactableCard.RemoveComponent(typeof(InteractableComponent));
-            }
 
             foreach (var monster in monsters)
             {
@@ -58,12 +54,21 @@ namespace Project.Scripts.Area.Systems.Logic
                     }
                 }
             }
+            
 
-            var fields = _entityManager.GetEntitiesOfGroup(_fields);
-
-            foreach (var field in fields)
+            if (monsters.Count != 0)
             {
-                field.AddComponent(new TurnDoneComponent());
+                var fields = _entityManager.GetEntitiesOfGroup(_fields);
+                
+                foreach (var field in fields)
+                {
+                    field.AddComponent(new TurnDoneComponent());
+                }
+                
+                foreach (var interactableCard in interactableCards)
+                {
+                    interactableCard.RemoveComponent(typeof(InteractableComponent));
+                }
             }
         }
     }

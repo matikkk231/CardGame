@@ -10,32 +10,30 @@ namespace Project.Scripts.Area.Systems.Logic
     {
         public IEntityManager _entityManager;
         public List<Type> _cards;
-        public List<Type> _fieldsWhereTurnDone;
+        public List<Type> _fields;
 
         public TurnDoneNotifierSystem(IEntityManager entityManager)
         {
             _entityManager = entityManager;
             _cards = new List<Type>();
             _cards.Add(typeof(CardComponent));
-            _fieldsWhereTurnDone = new List<Type>();
-            _fieldsWhereTurnDone.Add(typeof(FieldComponent));
-            _fieldsWhereTurnDone.Add(typeof(TurnDoneComponent));
+            _fields = new List<Type>();
+            _fields.Add(typeof(TurnDoneComponent));
+            _fields.Add(typeof(FieldComponent));
         }
 
 
         public void Execute()
         {
-            var fieldsWhereTurnDone = _entityManager.GetEntitiesOfGroup(_fieldsWhereTurnDone);
-            foreach (var fieldWhereTurnDone in fieldsWhereTurnDone)
-            {
-                fieldWhereTurnDone.RemoveComponent(typeof(TurnDoneComponent));
-            }
-
             var cards = _entityManager.GetEntitiesOfGroup(_cards);
+            var fieldWhereTurnDone = _entityManager.GetEntitiesOfGroup(_fields);
 
-            foreach (var card in cards)
+            if (fieldWhereTurnDone.Count != 0)
             {
-                card.AddComponent(new TurnDoneComponent());
+                foreach (var card in cards)
+                {
+                    card.AddComponent(new TurnDoneComponent());
+                }
             }
         }
     }

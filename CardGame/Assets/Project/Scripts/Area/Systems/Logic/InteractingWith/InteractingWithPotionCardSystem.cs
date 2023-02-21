@@ -19,11 +19,14 @@ namespace Project.Scripts.Area.Systems.Logic
             _entityManager = entityManager;
             _players = new List<Type>();
             _players.Add(typeof(PlayerCardComponent));
+
             _potions = new List<Type>();
             _potions.Add(typeof(PotionCardComponent));
             _potions.Add(typeof(InteractProcessingComponent));
+
             _groupOfInteractableCards = new List<Type>();
             _groupOfInteractableCards.Add(typeof(InteractableComponent));
+
             _fields = new List<Type>();
             _fields.Add(typeof(FieldComponent));
         }
@@ -33,15 +36,11 @@ namespace Project.Scripts.Area.Systems.Logic
             var potions = _entityManager.GetEntitiesOfGroup(_potions);
             var players = _entityManager.GetEntitiesOfGroup(_players);
             var interactableCards = _entityManager.GetEntitiesOfGroup(_groupOfInteractableCards);
-            foreach (var interactableCard in interactableCards)
-            {
-                interactableCard.RemoveComponent(typeof(InteractableComponent));
-            }
 
             foreach (var potion in potions)
             {
                 var potionComponent = (PotionCardComponent)potion.GetComponent(typeof(PotionCardComponent));
-                if (potionComponent.TypeOfPotion == "fastHealingPotion")
+                if (potionComponent.ProvidingTypeEffect == "Healing")
                 {
                     foreach (var player in players)
                     {
@@ -61,11 +60,19 @@ namespace Project.Scripts.Area.Systems.Logic
                 }
             }
 
-            var fields = _entityManager.GetEntitiesOfGroup(_fields);
-
-            foreach (var field in fields)
+            if (potions.Count != 0)
             {
-                field.AddComponent(new TurnDoneComponent());
+                var fields = _entityManager.GetEntitiesOfGroup(_fields);
+
+                foreach (var field in fields)
+                {
+                    field.AddComponent(new TurnDoneComponent());
+                }
+
+                foreach (var interactableCard in interactableCards)
+                {
+                    interactableCard.RemoveComponent(typeof(InteractableComponent));
+                }
             }
         }
     }

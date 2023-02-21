@@ -7,6 +7,7 @@ namespace Project.Scripts.Area.Configs
     {
         public string Id;
 
+        public string TypeProvidingEffect;
         public int ImpactForce;
         public int ImpactDuration;
 

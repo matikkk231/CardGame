@@ -7,13 +7,13 @@ namespace Project.Scripts.Area.Components.Logic
         public int ImpactForce;
         public int ImpactDuration;
 
-        public string TypeOfPotion;
+        public string ProvidingTypeEffect;
 
-        public PotionCardComponent(int impactDuration, int impactForce, string typeOfPotion)
+        public PotionCardComponent(int impactDuration, int impactForce, string providingTypeEffect)
         {
             ImpactForce = impactForce;
             ImpactDuration = impactDuration;
-            TypeOfPotion = typeOfPotion;
+            ProvidingTypeEffect = providingTypeEffect;
         }
     }
 }

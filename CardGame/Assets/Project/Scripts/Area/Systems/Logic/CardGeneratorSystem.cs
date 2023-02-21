@@ -45,7 +45,7 @@ namespace Project.Scripts.Area.Systems.Logic
                 {
                     if (fieldComponent.PositionsWithCard[x, y] == null)
                     {
-                        var randomNumber = UnityEngine.Random.Range(1, 4);
+                        var randomNumber = UnityEngine.Random.Range(1, 5);
                         switch (randomNumber)
                         {
                             case 1:
@@ -56,6 +56,9 @@ namespace Project.Scripts.Area.Systems.Logic
                                 break;
                             case 3:
                                 CreateFastHealingPotionCard(fieldComponent, x, y);
+                                break;
+                            case 4:
+                                CreateSlowHealingPotion(fieldComponent, x, y);
                                 break;
                             default: throw new Exception("card with this number doesn't exist");
                         }
@@ -120,7 +123,7 @@ namespace Project.Scripts.Area.Systems.Logic
                 }
             }
 
-            card.AddComponent(new PotionCardComponent(fastHealingPotionConfig.ImpactDuration, fastHealingPotionConfig.ImpactForce, fastHealingPotionConfig.Id));
+            card.AddComponent(new PotionCardComponent(fastHealingPotionConfig.ImpactDuration, fastHealingPotionConfig.ImpactForce, fastHealingPotionConfig.TypeProvidingEffect));
 
             int2 currentPositionRelativeFieldCenter = new int2(
                 x - Math.Abs(fieldComponent.MinRelativeCenterPositionX),
@@ -131,6 +134,35 @@ namespace Project.Scripts.Area.Systems.Logic
             int2 positionWhereCardShouldBeInstantiated = new int2(currentPositionRelativeFieldCenter.x * 35,
                 currentPositionRelativeFieldCenter.y * 52);
             card.AddComponent(new NeedInstantiatingCardPrefab(PrefabTypesId.Potion, positionWhereCardShouldBeInstantiated, fastHealingPotionConfig.PotionImage));
+            card.AddComponent(new FallingComponent());
+        }
+
+        private void CreateSlowHealingPotion(FieldComponent fieldComponent, int x, int y)
+        {
+            var card = _entityManager.CreateEntity();
+            card.AddComponent(new CardComponent());
+
+            PotionConfig slowRecoverPill = null;
+            foreach (var potionConfig in _potionConfigs)
+            {
+                if (potionConfig.Id == "slowRecoverPill")
+                {
+                    slowRecoverPill = potionConfig;
+                    break;
+                }
+            }
+
+            card.AddComponent(new PotionCardComponent(slowRecoverPill.ImpactDuration, slowRecoverPill.ImpactForce, slowRecoverPill.TypeProvidingEffect));
+
+            int2 currentPositionRelativeFieldCenter = new int2(
+                x - Math.Abs(fieldComponent.MinRelativeCenterPositionX),
+                y - Math.Abs(fieldComponent.MinRelativeCenterPositionY));
+
+            card.AddComponent(new PositionRelativeFieldCenterComponent(currentPositionRelativeFieldCenter));
+
+            int2 positionWhereCardShouldBeInstantiated = new int2(currentPositionRelativeFieldCenter.x * 35,
+                currentPositionRelativeFieldCenter.y * 52);
+            card.AddComponent(new NeedInstantiatingCardPrefab(PrefabTypesId.Potion, positionWhereCardShouldBeInstantiated, slowRecoverPill.PotionImage));
             card.AddComponent(new FallingComponent());
         }
     }

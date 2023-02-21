@@ -47,19 +47,21 @@ namespace Project.Scripts.Area.Systems.Logic
                 {
                     playerCard.AddComponent(new MovementOnFieldComponent(nextPositionOfPlayerCard.CurrentPosition));
                 }
+            }
+
+            if (emptyCards.Count != 0)
+            {
+                var fields = _entityManager.GetEntitiesOfGroup(_fields);
+
+                foreach (var field in fields)
+                {
+                    field.AddComponent(new TurnDoneComponent());
+                }
 
                 foreach (var interactableCard in interactableCards)
                 {
                     interactableCard.RemoveComponent(typeof(InteractableComponent));
                 }
-                
-            }
-
-            var fields = _entityManager.GetEntitiesOfGroup(_fields);
-            
-            foreach (var field in fields)
-            {
-                field.AddComponent(new TurnDoneComponent());
             }
         }
     }
