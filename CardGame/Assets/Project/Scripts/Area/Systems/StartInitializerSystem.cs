@@ -35,6 +35,7 @@ namespace Project.Scripts.Area.Systems.Logic
                 playerCard.AddComponent(new HealthComponent(10));
                 playerCard.AddComponent(new PositionRelativeFieldCenterComponent(new int2(0, 0)));
                 playerCard.AddComponent(new PlayerCardComponent());
+                playerCard.AddComponent(new CardComponent());
                 int2 cardPosition = new int2(0, 0);
                 playerCard.AddComponent(new NeedInstantiatingCardPrefab(PrefabTypesId.PlayerCard, cardPosition, _playersCardSprite));
 

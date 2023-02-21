@@ -11,6 +11,8 @@ namespace Project.Scripts.Area.Systems.Logic
         private readonly IEntityManager _entityManager;
         private readonly List<Type> _monsters;
         private readonly List<Type> _players;
+        private readonly List<Type> _groupOfInteractableCards;
+        private readonly List<Type> _fields;
 
         public InteractingWithMonsterSystem(IEntityManager entityManager)
         {
@@ -20,16 +22,25 @@ namespace Project.Scripts.Area.Systems.Logic
             _monsters.Add(typeof(InteractProcessingComponent));
             _players = new List<Type>();
             _players.Add(typeof(PlayerCardComponent));
+            _groupOfInteractableCards = new List<Type>();
+            _groupOfInteractableCards.Add(typeof(InteractableComponent));
+            _fields = new List<Type>();
+            _fields.Add(typeof(FieldComponent));
         }
 
         public void Execute()
         {
             var monsters = _entityManager.GetEntitiesOfGroup(_monsters);
             var players = _entityManager.GetEntitiesOfGroup(_players);
+            var interactableCards = _entityManager.GetEntitiesOfGroup(_groupOfInteractableCards);
+            foreach (var interactableCard in interactableCards)
+            {
+                interactableCard.RemoveComponent(typeof(InteractableComponent));
+            }
+
             foreach (var monster in monsters)
             {
                 var healthComponent = (HealthComponent)monster.GetComponent(typeof(HealthComponent));
-
 
                 foreach (var player in players)
                 {
@@ -46,6 +57,13 @@ namespace Project.Scripts.Area.Systems.Logic
                         player.AddComponent(new MovementOnFieldComponent(monsterPositionComponent.CurrentPosition));
                     }
                 }
+            }
+
+            var fields = _entityManager.GetEntitiesOfGroup(_fields);
+
+            foreach (var field in fields)
+            {
+                field.AddComponent(new TurnDoneComponent());
             }
         }
     }

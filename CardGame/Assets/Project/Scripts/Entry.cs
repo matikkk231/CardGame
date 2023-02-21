@@ -14,6 +14,7 @@ namespace Project.Scripts
         [SerializeField] private List<PrefabType> _prefabTypes;
         [SerializeField] private List<MonsterConfig> _monsterConfigs;
         [SerializeField] private Sprite _playerImage;
+        [SerializeField] private List<PotionConfig> _potionConfigs;
 
         private IEntityManager _entityManager;
 
@@ -29,13 +30,18 @@ namespace Project.Scripts
         private ISystem _movementSystem;
         private ISystem _interactingWithMonsterCardSystem;
         private ISystem _fallingSystem;
+        private ISystem _interactingWithPotionCardSystem;
+        private ISystem _turnDoneNotifierSystem;
+        private ISystem _turnFinishedNotifierSystem;
+        private ISystem _healingStatusProcessingSystem;
+        private ISystem _showingImpactSystem;
 
         private void Start()
         {
             _entityManager = new EntityManager();
 
             _startInitializerSystem = new StartInitializerSystem(_entityManager, _playerImage);
-            _cardGeneratorSystem = new CardGeneratorSystem(_entityManager, _monsterConfigs);
+            _cardGeneratorSystem = new CardGeneratorSystem(_entityManager, _monsterConfigs, _potionConfigs);
             _prefabInstantiatorSystem = new CardPrefabInstantiatorSystem(_entityManager, _prefabTypes);
             _healthViewSystem = new HealthViewSystem(_entityManager);
             _checkingAbilityToInteractSystem = new CheckingAbilityToInteractSystem(_entityManager);
@@ -46,6 +52,11 @@ namespace Project.Scripts
             _movementSystem = new MovingCardsSystem(_entityManager);
             _interactingWithMonsterCardSystem = new InteractingWithMonsterSystem(_entityManager);
             _fallingSystem = new FallingCardsSystem(_entityManager);
+            _interactingWithPotionCardSystem = new InteractingWithPotionCardSystem(_entityManager);
+            _turnDoneNotifierSystem = new TurnDoneNotifierSystem(_entityManager);
+            _turnFinishedNotifierSystem = new TurnFinishedNotifierSystem(_entityManager);
+            _healingStatusProcessingSystem = new HealingStatusProcessingSystem(_entityManager);
+            _showingImpactSystem = new ShowingImpactSystem(_entityManager);
         }
 
         private void Update()
@@ -61,13 +72,21 @@ namespace Project.Scripts
 
             _interactingWithEmptyCardsSystem.Execute();
             _interactingWithMonsterCardSystem.Execute();
+            _interactingWithPotionCardSystem.Execute();
+            _turnDoneNotifierSystem.Execute();
+
             _destroyingCardsSystem.Execute();
             _movementSystem.Execute();
-            
+
             _fieldManagerSystem.Execute();
             _fallingSystem.Execute();
             _movementSystem.Execute();
             _fieldManagerSystem.Execute();
+
+            _healingStatusProcessingSystem.Execute();
+            _turnFinishedNotifierSystem.Execute();
+            
+            _showingImpactSystem.Execute();
         }
     }
 }
