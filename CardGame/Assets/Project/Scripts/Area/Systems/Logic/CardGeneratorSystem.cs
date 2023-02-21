@@ -70,6 +70,7 @@ namespace Project.Scripts.Area.Systems.Logic
                 currentPositionRelativeFieldCenter.y * 52);
             card.AddComponent(new NeedInstantiatingCardPrefab(PrefabTypesId.Card,
                 positionWhereCardShouldBeInstantiated, null));
+            card.AddComponent(new FallingComponent());
         }
 
         private void CreateMonsterCard(FieldComponent fieldComponent, int x, int y)
@@ -94,6 +95,7 @@ namespace Project.Scripts.Area.Systems.Logic
             card.AddComponent(new NeedInstantiatingCardPrefab(PrefabTypesId.MonsterCard,
                 positionWhereCardShouldBeInstantiated, monsterSprite));
             card.AddComponent(new HealthComponent(monsterHp));
+            card.AddComponent(new FallingComponent());
         }
     }
 }

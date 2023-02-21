@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5518677518397379567}
     m_Modifications:
+    - target: {fileID: 579304638493719380, guid: a2be15c3c708e284d98d2bfdd3086060, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3396020345465910473, guid: a2be15c3c708e284d98d2bfdd3086060, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -95,6 +99,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8989317533215259986, guid: a2be15c3c708e284d98d2bfdd3086060, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2be15c3c708e284d98d2bfdd3086060, type: 3}
 --- !u!1 &3481731721436088672 stripped
@@ -178,6 +186,10 @@ PrefabInstance:
       objectReference: {fileID: 928311994, guid: 7ea7d878fdeefdb4a869303390c2a59a, type: 3}
     - target: {fileID: 5214311657345921404, guid: 8694161a12a1b9c4aaebcefbd88ab46d, type: 3}
       propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5214311657345921404, guid: 8694161a12a1b9c4aaebcefbd88ab46d, type: 3}
+      propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6077002730339756671, guid: 8694161a12a1b9c4aaebcefbd88ab46d, type: 3}

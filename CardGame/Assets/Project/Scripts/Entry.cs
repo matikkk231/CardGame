@@ -28,6 +28,7 @@ namespace Project.Scripts
         private ISystem _destroyingCardsSystem;
         private ISystem _movementSystem;
         private ISystem _interactingWithMonsterCardSystem;
+        private ISystem _fallingSystem;
 
         private void Start()
         {
@@ -44,6 +45,7 @@ namespace Project.Scripts
             _destroyingCardsSystem = new DestroyCardSystem(_entityManager);
             _movementSystem = new MovingCardsSystem(_entityManager);
             _interactingWithMonsterCardSystem = new InteractingWithMonsterSystem(_entityManager);
+            _fallingSystem = new FallingCardsSystem(_entityManager);
         }
 
         private void Update()
@@ -56,11 +58,14 @@ namespace Project.Scripts
             _checkingAbilityToInteractSystem.Execute();
 
             _checkingInteractingTrySystem.Execute();
-            
+
             _interactingWithEmptyCardsSystem.Execute();
             _interactingWithMonsterCardSystem.Execute();
-            
             _destroyingCardsSystem.Execute();
+            _movementSystem.Execute();
+            
+            _fieldManagerSystem.Execute();
+            _fallingSystem.Execute();
             _movementSystem.Execute();
             _fieldManagerSystem.Execute();
         }
