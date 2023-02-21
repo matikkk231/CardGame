@@ -51,20 +51,22 @@ namespace Project.Scripts.Area.Systems.Logic
                             (PositionRelativeFieldCenterComponent)monster.GetComponent(
                                 typeof(PositionRelativeFieldCenterComponent));
                         player.AddComponent(new MovementOnFieldComponent(monsterPositionComponent.CurrentPosition));
-                    }
-                }
-            }
-            
 
-            if (monsters.Count != 0)
-            {
-                var fields = _entityManager.GetEntitiesOfGroup(_fields);
-                
-                foreach (var field in fields)
-                {
-                    field.AddComponent(new TurnDoneComponent());
+                        var fields = _entityManager.GetEntitiesOfGroup(_fields);
+
+                        foreach (var field in fields)
+                        {
+                            var turnDoneComponent = (TurnDoneComponent)field.GetComponent(typeof(TurnDoneComponent));
+                            if (turnDoneComponent != null)
+                            {
+                                field.AddComponent(new TurnDoneComponent());
+                            }
+                        }
+                    }
+
+                    monster.RemoveComponent(typeof(InteractProcessingComponent));
                 }
-                
+
                 foreach (var interactableCard in interactableCards)
                 {
                     interactableCard.RemoveComponent(typeof(InteractableComponent));

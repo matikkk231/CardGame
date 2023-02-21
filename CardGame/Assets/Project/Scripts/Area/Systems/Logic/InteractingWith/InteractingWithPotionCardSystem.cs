@@ -44,6 +44,12 @@ namespace Project.Scripts.Area.Systems.Logic
                 {
                     foreach (var player in players)
                     {
+                        var healingComponent = (HealingStatusComponent)player.GetComponent(typeof(HealingStatusComponent));
+                        if (healingComponent != null)
+                        {
+                            player.RemoveComponent(typeof(HealingStatusComponent));
+                        }
+
                         player.AddComponent(new HealingStatusComponent(potionComponent.ImpactDuration, potionComponent.ImpactForce));
                     }
                 }
