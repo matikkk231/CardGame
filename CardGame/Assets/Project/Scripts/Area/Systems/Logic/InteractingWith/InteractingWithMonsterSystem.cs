@@ -13,6 +13,7 @@ namespace Project.Scripts.Area.Systems.Logic
         private readonly List<Type> _players;
         private readonly List<Type> _groupOfInteractableCards;
         private readonly List<Type> _fields;
+        private readonly List<Type> _scores;
 
         public InteractingWithMonsterSystem(IEntityManager entityManager)
         {
@@ -26,6 +27,8 @@ namespace Project.Scripts.Area.Systems.Logic
             _groupOfInteractableCards.Add(typeof(InteractableComponent));
             _fields = new List<Type>();
             _fields.Add(typeof(FieldComponent));
+            _scores = new List<Type>();
+            _scores.Add(typeof(ScoreComponent));
         }
 
         public void Execute()
@@ -36,14 +39,14 @@ namespace Project.Scripts.Area.Systems.Logic
 
             foreach (var monster in monsters)
             {
-                var healthComponent = (HealthComponent)monster.GetComponent(typeof(HealthComponent));
+                var monsterHealthComponent = (HealthComponent)monster.GetComponent(typeof(HealthComponent));
 
                 foreach (var player in players)
                 {
                     var healthPlayerComponent = (HealthComponent)player.GetComponent(typeof(HealthComponent));
-                    if (healthPlayerComponent.CurrentHealth > healthComponent.CurrentHealth)
+                    if (healthPlayerComponent.CurrentHealth > monsterHealthComponent.CurrentHealth)
                     {
-                        healthPlayerComponent.CurrentHealth -= healthComponent.CurrentHealth;
+                        healthPlayerComponent.CurrentHealth -= monsterHealthComponent.CurrentHealth;
                         monster.RemoveComponent(typeof(InteractProcessingComponent));
                         monster.AddComponent(new NeedToBeDestroyedComponent());
 
@@ -61,6 +64,13 @@ namespace Project.Scripts.Area.Systems.Logic
                             {
                                 field.AddComponent(new TurnDoneComponent());
                             }
+                        }
+
+                        var scores = _entityManager.GetEntitiesOfGroup(_scores);
+                        foreach (var score in scores)
+                        {
+                            var scoreComponent = (ScoreComponent)score.GetComponent(typeof(ScoreComponent));
+                            scoreComponent.ScoreValue += monsterHealthComponent.MaxHealth;
                         }
                     }
 

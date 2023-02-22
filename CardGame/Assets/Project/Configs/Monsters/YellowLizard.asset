@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: YellowLizard
   m_EditorClassIdentifier: 
   MonsterImage: {fileID: 922900276, guid: 235c4f15182c541409d2791f642a2e0e, type: 3}
-  MinHp: 2
-  MaxHp: 7
+  MinHp: 1
+  MaxHp: 4

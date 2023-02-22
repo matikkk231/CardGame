@@ -6,7 +6,7 @@ using Project.Scripts.Core.ECS.System;
 
 namespace Project.Scripts.Area.Systems.Logic
 {
-    public class InteractingWithPotionCardSystem : ISystem
+    public class InteractingWithHealingPotionCardSystem : ISystem
     {
         private readonly IEntityManager _entityManager;
         private readonly List<Type> _potions;
@@ -14,7 +14,7 @@ namespace Project.Scripts.Area.Systems.Logic
         private readonly List<Type> _groupOfInteractableCards;
         private readonly List<Type> _fields;
 
-        public InteractingWithPotionCardSystem(IEntityManager entityManager)
+        public InteractingWithHealingPotionCardSystem(IEntityManager entityManager)
         {
             _entityManager = entityManager;
             _players = new List<Type>();
@@ -23,6 +23,7 @@ namespace Project.Scripts.Area.Systems.Logic
             _potions = new List<Type>();
             _potions.Add(typeof(PotionCardComponent));
             _potions.Add(typeof(InteractProcessingComponent));
+            _potions.Add(typeof(HealingPotionComponent));
 
             _groupOfInteractableCards = new List<Type>();
             _groupOfInteractableCards.Add(typeof(InteractableComponent));
@@ -40,18 +41,16 @@ namespace Project.Scripts.Area.Systems.Logic
             foreach (var potion in potions)
             {
                 var potionComponent = (PotionCardComponent)potion.GetComponent(typeof(PotionCardComponent));
-                if (potionComponent.ProvidingTypeEffect == "Healing")
-                {
-                    foreach (var player in players)
-                    {
-                        var healingComponent = (HealingStatusComponent)player.GetComponent(typeof(HealingStatusComponent));
-                        if (healingComponent != null)
-                        {
-                            player.RemoveComponent(typeof(HealingStatusComponent));
-                        }
 
-                        player.AddComponent(new HealingStatusComponent(potionComponent.ImpactDuration, potionComponent.ImpactForce));
+                foreach (var player in players)
+                {
+                    var healingComponent = (HealingStatusComponent)player.GetComponent(typeof(HealingStatusComponent));
+                    if (healingComponent != null)
+                    {
+                        player.RemoveComponent(typeof(HealingStatusComponent));
                     }
+
+                    player.AddComponent(new HealingStatusComponent(potionComponent.ImpactDuration, potionComponent.ImpactForce));
                 }
             }
 

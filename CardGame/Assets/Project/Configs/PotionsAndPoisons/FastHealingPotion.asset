@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e67f854348a46f5acfea293b099ddc7, type: 3}
   m_Name: FastHealingPotion
   m_EditorClassIdentifier: 
-  Id: 
-  ImpactForce: 0
-  ImpactDuration: 0
-  PotionImage: {fileID: 0}
+  Id: fastHealingPotion
+  TypeProvidingEffect: Healing
+  ImpactForce: 3
+  ImpactDuration: 1
+  PotionImage: {fileID: 21300000, guid: 84ec04297e447b047ba5a8335847a3ae, type: 3}

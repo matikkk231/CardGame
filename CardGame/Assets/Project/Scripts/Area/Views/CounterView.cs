@@ -1,7 +1,7 @@
 using TMPro;
 using UnityEngine;
 
-public class ImpactTextView : MonoBehaviour
+public class CounterView : MonoBehaviour
 {
     public TextMeshProUGUI ImpactText;
 }

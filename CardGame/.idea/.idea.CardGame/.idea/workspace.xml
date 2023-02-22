@@ -2,41 +2,49 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65dd1439-b731-44fc-b582-f7c3def29879" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Components/Logic/HealingStatusComponent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Components/Logic/HealingStatusComponent.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Components/Logic/PotionCardComponent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Components/Logic/PotionCardComponent.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Components/Logic/TurnDoneComponent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Components/Logic/TurnDoneComponent.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Configs/PotionConfig.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Configs/PotionConfig.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/Logic/HealingStatusProcessingSystem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/Logic/HealingStatusProcessingSystem.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/Logic/InteractingWith.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/Logic/InteractingWith/InteractingWithPotionCardSystem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/Logic/InteractingWith/InteractingWithPotionCardSystem.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/Logic/TurnDoneNotifierSystem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/Logic/TurnDoneNotifierSystem.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/Logic/TurnFinishedNotifierSystem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/Logic/TurnFinishedNotifierSystem.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/View/ShowingImpactSystem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/View/ShowingImpactSystem.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Views.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Components/Logic/HealingPotionComponent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Components/Logic/HealingPotionComponent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Components/Logic/ScoreComponent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Components/Logic/ScoreComponent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Components/View/NeedInstantiatingPrefabComponent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Components/View/NeedInstantiatingPrefabComponent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/Logic/InteractingWith/UpdatingScoreSystem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/Logic/InteractingWith/UpdatingScoreSystem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/View/PrefabInstantiator/CardPrefabType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/View/PrefabInstantiator/CardPrefabType.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/View/PrefabInstantiator/PrefabInstantiatorSystem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/View/PrefabInstantiator/PrefabInstantiatorSystem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/View/PrefabInstantiator/PrefabTypeId.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/View/PrefabInstantiator/PrefabTypeId.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Configs/ClownGhost.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Configs/ClownGhost.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Configs/YellowLizard.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Configs/YellowLizard.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Prefabs/HealthUI.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Prefabs/HealthUI.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Components/View/GameObjectComponent/PrefabTypesId.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Components/View/GameObjectComponent/PrefabTypesId.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Configs/Monsters/YellowLizard.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Configs/Monsters/YellowLizard.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Configs/PotionsAndPoisons/FastHealingPotion.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Configs/PotionsAndPoisons/FastHealingPotion.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Configs/PotionsAndPoisons/SlowRecoverPill.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Configs/PotionsAndPoisons/SlowRecoverPill.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Prefabs/HealthUICanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Prefabs/HealthUICanvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Components/Logic/PotionCardComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Components/Logic/PotionCardComponent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Components/View/GameObjectComponent/PrefabTypesId.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Components/View/GameObjectComponent/CardPrefabTypesId.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Components/View/GameObjectComponent/PrefabTypesId.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Components/View/GameObjectComponent/CardPrefabTypesId.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Components/View/HealthViewComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Components/View/HealthView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Components/View/HealthViewComponent.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Components/View/HealthView.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Components/View/NeedInstantiatingCardPrefab.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Components/View/NeedInstantiatingCardPrefabComponent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Components/View/NeedInstantiatingCardPrefab.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Components/View/NeedInstantiatingCardPrefabComponent.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Configs/PotionConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Configs/PotionConfig.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/Logic/CardGeneratorSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/Logic/CardGeneratorSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/Logic/InteractingWithEmptyCardsSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/Logic/InteractingWith/InteractingWithEmptyCardsSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/Logic/InteractingWithEmptyCardsSystem.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/Logic/InteractingWith/InteractingWithEmptyCardsSystem.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/Logic/InteractingWithMonsterSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/Logic/InteractingWith/InteractingWithMonsterSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/Logic/InteractingWithMonsterSystem.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/Logic/InteractingWith/InteractingWithMonsterSystem.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/Logic/FallingCardsSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/Logic/FallingCardsSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/Logic/InteractingWith/InteractingWithMonsterSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/Logic/InteractingWith/InteractingWithMonsterSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/Logic/InteractingWith/InteractingWithPotionCardSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/Logic/InteractingWith/InteractingWithHealingPotionCardSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/Logic/InteractingWith/InteractingWithPotionCardSystem.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/Logic/InteractingWith/InteractingWithHealingPotionCardSystem.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/StartInitializerSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/StartInitializerSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/View/HealthViewSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/View/HealthViewSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/View/PrefabInstantiator/CardPrefabInstantiatorSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/View/PrefabInstantiator/CardPrefabInstantiatorSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/View/PrefabInstantiator/PrefabType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/View/PrefabInstantiator/PrefabType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/View/PrefabInstantiator/PrefabType.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/View/PrefabInstantiator/PrefabType.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/View/ShowingImpactSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/View/ShowingPotionImpactSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/View/ShowingImpactSystem.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/View/ShowingPotionImpactSystem.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Views/ImpactTextView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Views/CounterView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Views/ImpactTextView.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Area/Views/CounterView.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Entry.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Entry.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -95,10 +103,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="18216">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="18216" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -126,6 +134,9 @@
       <workItem from="1676880242558" duration="497000" />
       <workItem from="1676889455032" duration="1809000" />
       <workItem from="1676974695143" duration="1450000" />
+      <workItem from="1676986656520" duration="4782000" />
+      <workItem from="1676996407050" duration="132000" />
+      <workItem from="1677072495063" duration="4459000" />
     </task>
     <servers />
   </component>
@@ -164,19 +175,6 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="37" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Project/Scripts/Area/Systems/Logic/InteractingWith/InteractingWithPotionCardSystem.cs</url>
-          <line>43</line>
-          <properties documentPath="C:\Users\matik\OneDrive\Документы\GitHub\CardGame\CardGame\Assets\Project\Scripts\Area\Systems\Logic\InteractingWith\InteractingWithPotionCardSystem.cs" initialLine="43" containingFunctionPresentation="method 'Execute'">
-            <startOffsets>
-              <option value="1796" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1852" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="39" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

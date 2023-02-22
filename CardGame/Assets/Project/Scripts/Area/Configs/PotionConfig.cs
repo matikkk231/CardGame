@@ -6,8 +6,7 @@ namespace Project.Scripts.Area.Configs
     public class PotionConfig : ScriptableObject
     {
         public string Id;
-
-        public string TypeProvidingEffect;
+        
         public int ImpactForce;
         public int ImpactDuration;
 

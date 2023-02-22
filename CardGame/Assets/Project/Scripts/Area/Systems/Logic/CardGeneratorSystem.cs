@@ -78,7 +78,7 @@ namespace Project.Scripts.Area.Systems.Logic
             card.AddComponent(new PositionRelativeFieldCenterComponent(currentPositionRelativeFieldCenter));
             int2 positionWhereCardShouldBeInstantiated = new int2(currentPositionRelativeFieldCenter.x * 35,
                 currentPositionRelativeFieldCenter.y * 52);
-            card.AddComponent(new NeedInstantiatingCardPrefab(PrefabTypesId.Card,
+            card.AddComponent(new NeedInstantiatingCardPrefabComponent(CardPrefabTypesId.Card,
                 positionWhereCardShouldBeInstantiated, null));
             card.AddComponent(new FallingComponent());
         }
@@ -102,7 +102,7 @@ namespace Project.Scripts.Area.Systems.Logic
             card.AddComponent(new PositionRelativeFieldCenterComponent(currentPositionRelativeFieldCenter));
             int2 positionWhereCardShouldBeInstantiated = new int2(currentPositionRelativeFieldCenter.x * 35,
                 currentPositionRelativeFieldCenter.y * 52);
-            card.AddComponent(new NeedInstantiatingCardPrefab(PrefabTypesId.MonsterCard,
+            card.AddComponent(new NeedInstantiatingCardPrefabComponent(CardPrefabTypesId.MonsterCard,
                 positionWhereCardShouldBeInstantiated, monsterSprite));
             card.AddComponent(new HealthComponent(monsterHp));
             card.AddComponent(new FallingComponent());
@@ -123,7 +123,7 @@ namespace Project.Scripts.Area.Systems.Logic
                 }
             }
 
-            card.AddComponent(new PotionCardComponent(fastHealingPotionConfig.ImpactDuration, fastHealingPotionConfig.ImpactForce, fastHealingPotionConfig.TypeProvidingEffect));
+            card.AddComponent(new PotionCardComponent(fastHealingPotionConfig.ImpactDuration, fastHealingPotionConfig.ImpactForce));
 
             int2 currentPositionRelativeFieldCenter = new int2(
                 x - Math.Abs(fieldComponent.MinRelativeCenterPositionX),
@@ -133,8 +133,9 @@ namespace Project.Scripts.Area.Systems.Logic
 
             int2 positionWhereCardShouldBeInstantiated = new int2(currentPositionRelativeFieldCenter.x * 35,
                 currentPositionRelativeFieldCenter.y * 52);
-            card.AddComponent(new NeedInstantiatingCardPrefab(PrefabTypesId.Potion, positionWhereCardShouldBeInstantiated, fastHealingPotionConfig.PotionImage));
+            card.AddComponent(new NeedInstantiatingCardPrefabComponent(CardPrefabTypesId.Potion, positionWhereCardShouldBeInstantiated, fastHealingPotionConfig.PotionImage));
             card.AddComponent(new FallingComponent());
+            card.AddComponent(new HealingPotionComponent());
         }
 
         private void CreateSlowHealingPotion(FieldComponent fieldComponent, int x, int y)
@@ -152,7 +153,7 @@ namespace Project.Scripts.Area.Systems.Logic
                 }
             }
 
-            card.AddComponent(new PotionCardComponent(slowRecoverPill.ImpactDuration, slowRecoverPill.ImpactForce, slowRecoverPill.TypeProvidingEffect));
+            card.AddComponent(new PotionCardComponent(slowRecoverPill.ImpactDuration, slowRecoverPill.ImpactForce));
 
             int2 currentPositionRelativeFieldCenter = new int2(
                 x - Math.Abs(fieldComponent.MinRelativeCenterPositionX),
@@ -162,8 +163,9 @@ namespace Project.Scripts.Area.Systems.Logic
 
             int2 positionWhereCardShouldBeInstantiated = new int2(currentPositionRelativeFieldCenter.x * 35,
                 currentPositionRelativeFieldCenter.y * 52);
-            card.AddComponent(new NeedInstantiatingCardPrefab(PrefabTypesId.Potion, positionWhereCardShouldBeInstantiated, slowRecoverPill.PotionImage));
+            card.AddComponent(new NeedInstantiatingCardPrefabComponent(CardPrefabTypesId.Potion, positionWhereCardShouldBeInstantiated, slowRecoverPill.PotionImage));
             card.AddComponent(new FallingComponent());
+            card.AddComponent(new HealingPotionComponent());
         }
     }
 }

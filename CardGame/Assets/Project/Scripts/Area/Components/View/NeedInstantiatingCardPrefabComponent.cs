@@ -5,16 +5,16 @@ using UnityEngine;
 
 namespace Project.Scripts.Area.Components.Logic
 {
-    public class NeedInstantiatingCardPrefab : IComponent
+    public class NeedInstantiatingCardPrefabComponent : IComponent
     {
-        public PrefabTypesId PrefabTypeId;
+        public CardPrefabTypesId CardPrefabTypeId;
         public int2 PositionWhereShouldBeInstantiated;
         public Sprite CardContent;
 
-        public NeedInstantiatingCardPrefab(PrefabTypesId prefabTypeId, int2 positionWhereShouldBeInstantiated,
+        public NeedInstantiatingCardPrefabComponent(CardPrefabTypesId cardPrefabTypeId, int2 positionWhereShouldBeInstantiated,
             Sprite cardContent)
         {
-            PrefabTypeId = prefabTypeId;
+            CardPrefabTypeId = cardPrefabTypeId;
             PositionWhereShouldBeInstantiated = positionWhereShouldBeInstantiated;
             CardContent = cardContent;
         }

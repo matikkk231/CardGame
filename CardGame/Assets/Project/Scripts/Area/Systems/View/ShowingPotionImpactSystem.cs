@@ -7,17 +7,18 @@ using Project.Scripts.Core.ECS.System;
 
 namespace Project.Scripts.Area.Systems.Logic.View
 {
-    public class ShowingImpactSystem : ISystem
+    public class ShowingPotionImpactSystem : ISystem
     {
-        private IEntityManager _entityManager;
-        private List<Type> _potions;
+        private readonly IEntityManager _entityManager;
+        private readonly List<Type> _potions;
 
-        public ShowingImpactSystem(IEntityManager entityManager)
+        public ShowingPotionImpactSystem(IEntityManager entityManager)
         {
             _entityManager = entityManager;
             _potions = new List<Type>();
             _potions.Add(typeof(GameObjectComponent));
             _potions.Add(typeof(PotionCardComponent));
+            
         }
 
         public void Execute()
@@ -27,7 +28,7 @@ namespace Project.Scripts.Area.Systems.Logic.View
             {
                 var potionCardComponent = (PotionCardComponent)potion.GetComponent(typeof(PotionCardComponent));
                 var gameObjectComponent = (GameObjectComponent)potion.GetComponent(typeof(GameObjectComponent));
-                var impactTextVew = (ImpactTextView)gameObjectComponent.GameObject.GetComponent(typeof(ImpactTextView));
+                var impactTextVew = (CounterView)gameObjectComponent.GameObject.GetComponent(typeof(CounterView));
                 impactTextVew.ImpactText.text = potionCardComponent.ImpactForce.ToString();
             }
         }
