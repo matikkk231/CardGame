@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Project.Scripts.Area.Components.Logic;
+using Project.Scripts.Area.Components.View;
 using Project.Scripts.Area.Components.View.GameObjectComponent;
 using Project.Scripts.Core.ECS.Entity;
 using Project.Scripts.Core.ECS.System;
@@ -33,8 +34,9 @@ namespace Project.Scripts.Area.Systems.Logic
                 var gameObjectComponent = (GameObjectComponent)movingCard.GetComponent(typeof(GameObjectComponent));
                 cardsPosition.CurrentPosition = movementComponent.PositionRelativeCenterToMove;
 
-                gameObjectComponent.GameObject.transform.position = new Vector3(
-                    cardsPosition.CurrentPosition.x * 35, cardsPosition.CurrentPosition.y * 52, 0);
+                
+                movingCard.AddComponent(new NeedMovingViewComponent(new Vector3(
+                    cardsPosition.CurrentPosition.x * 35, cardsPosition.CurrentPosition.y * 52, 0)));
 
                 movingCard.RemoveComponent(typeof(MovementOnFieldComponent));
             }

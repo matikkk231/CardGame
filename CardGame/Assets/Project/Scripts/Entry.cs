@@ -38,6 +38,7 @@ namespace Project.Scripts
         private ISystem _healingStatusProcessingSystem;
         private ISystem _showingImpactSystem;
         private ISystem _updatingScoreSystem;
+        private ISystem _movementViewSystem;
 
         private void Start()
         {
@@ -62,6 +63,7 @@ namespace Project.Scripts
             _showingImpactSystem = new ShowingPotionImpactSystem(_entityManager);
             _prefabInstantiatorSystem = new PrefabInstantiatorSystem(_entityManager, _prefabTypes);
             _updatingScoreSystem = new UpdatingScoreSystem(_entityManager);
+            _movementViewSystem = new MovementViewSystem(_entityManager);
         }
 
         private void Update()
@@ -95,6 +97,8 @@ namespace Project.Scripts
             _showingImpactSystem.Execute();
             _updatingScoreSystem.Execute();
             _fieldManagerSystem.Execute();
+
+            _movementViewSystem.Execute();
         }
     }
 }
