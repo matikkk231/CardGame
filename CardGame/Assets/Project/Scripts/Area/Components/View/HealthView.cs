@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Project.Scripts.Area.Components.Logic
 {
-    public class HealthViewComponent : MonoBehaviour, IComponent
+    public class HealthView : MonoBehaviour, IComponent
     {
         public TextMeshProUGUI TextMeshProUGUI;
     }

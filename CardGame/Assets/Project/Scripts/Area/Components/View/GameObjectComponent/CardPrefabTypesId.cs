@@ -1,9 +1,10 @@
 namespace Project.Scripts.Area.Components.View.GameObjectComponent
 {
-    public enum PrefabTypesId
+    public enum CardPrefabTypesId
     {
         Card,
         PlayerCard,
-        MonsterCard
+        MonsterCard,
+        Potion
     }
 }

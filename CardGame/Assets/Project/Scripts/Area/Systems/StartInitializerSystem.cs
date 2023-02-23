@@ -1,5 +1,7 @@
 using Project.Scripts.Area.Components.Logic;
+using Project.Scripts.Area.Components.View;
 using Project.Scripts.Area.Components.View.GameObjectComponent;
+using Project.Scripts.Area.Systems.View.PrefabInstantiator;
 using Project.Scripts.Core.ECS.Entity;
 using Project.Scripts.Core.ECS.System;
 using Unity.Mathematics;
@@ -9,9 +11,9 @@ namespace Project.Scripts.Area.Systems.Logic
 {
     public class StartInitializerSystem : ISystem
     {
-        private IEntityManager _entityManager;
+        private readonly IEntityManager _entityManager;
         private bool _initializedFirst;
-        private Sprite _playersCardSprite;
+        private readonly Sprite _playersCardSprite;
 
         public StartInitializerSystem(IEntityManager entityManager, Sprite playersCardSprite)
         {
@@ -35,8 +37,15 @@ namespace Project.Scripts.Area.Systems.Logic
                 playerCard.AddComponent(new HealthComponent(10));
                 playerCard.AddComponent(new PositionRelativeFieldCenterComponent(new int2(0, 0)));
                 playerCard.AddComponent(new PlayerCardComponent());
+                playerCard.AddComponent(new CardComponent());
                 int2 cardPosition = new int2(0, 0);
-                playerCard.AddComponent(new NeedInstantiatingCardPrefab(PrefabTypesId.PlayerCard, cardPosition, _playersCardSprite));
+                playerCard.AddComponent(new NeedInstantiatingCardPrefabComponent(CardPrefabTypesId.PlayerCard, cardPosition, _playersCardSprite));
+
+
+                var score = _entityManager.CreateEntity();
+                score.AddComponent(new ScoreComponent());
+                var scorePosition = new Vector2(0, 0);
+                score.AddComponent(new NeedInstantiatingPrefabComponent(PrefabTypeId.Score, scorePosition));
 
                 _initializedFirst = false;
             }

@@ -9,9 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c2d94634f1845cd90d5a6301f8a47f6, type: 3}
-  m_Name: YellowLizard
+  m_Script: {fileID: 11500000, guid: 0e67f854348a46f5acfea293b099ddc7, type: 3}
+  m_Name: SlowRecoverPill
   m_EditorClassIdentifier: 
-  MonsterImage: {fileID: 922900276, guid: 235c4f15182c541409d2791f642a2e0e, type: 3}
-  MinHp: 2
-  MaxHp: 7
+  Id: slowRecoverPill
+  TypeProvidingEffect: Healing
+  ImpactForce: 1
+  ImpactDuration: 5
+  PotionImage: {fileID: 21300000, guid: abacfc089075c1648a9825deed9ac031, type: 3}

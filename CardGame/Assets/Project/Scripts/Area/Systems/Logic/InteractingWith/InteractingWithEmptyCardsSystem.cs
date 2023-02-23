@@ -12,6 +12,7 @@ namespace Project.Scripts.Area.Systems.Logic
         private readonly List<Type> _groupOfEmptyCardComponents;
         private readonly List<Type> _groupOfPlayerCardComponents;
         private readonly List<Type> _groupOfInteractableCards;
+        private readonly List<Type> _fields;
 
         public InteractingWithEmptyCardsSystem(IEntityManager entityManager)
         {
@@ -24,6 +25,8 @@ namespace Project.Scripts.Area.Systems.Logic
             _groupOfPlayerCardComponents.Add(typeof(PlayerCardComponent));
             _groupOfInteractableCards = new List<Type>();
             _groupOfInteractableCards.Add(typeof(InteractableComponent));
+            _fields = new List<Type>();
+            _fields.Add(typeof(FieldComponent));
         }
 
         public void Execute()
@@ -43,6 +46,16 @@ namespace Project.Scripts.Area.Systems.Logic
                 foreach (var playerCard in playerCards)
                 {
                     playerCard.AddComponent(new MovementOnFieldComponent(nextPositionOfPlayerCard.CurrentPosition));
+                }
+            }
+
+            if (emptyCards.Count != 0)
+            {
+                var fields = _entityManager.GetEntitiesOfGroup(_fields);
+
+                foreach (var field in fields)
+                {
+                    field.AddComponent(new TurnDoneComponent());
                 }
 
                 foreach (var interactableCard in interactableCards)

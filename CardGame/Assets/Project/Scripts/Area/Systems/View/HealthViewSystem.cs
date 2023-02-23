@@ -29,7 +29,7 @@ namespace Project.Scripts.Area.Systems.Logic.View
                 var healthLogic = (HealthComponent)entity.GetComponent(typeof(HealthComponent));
                 var gameObjectComponent = (GameObjectComponent)entity.GetComponent(typeof(GameObjectComponent));
                 var healthViewComponent =
-                    (HealthViewComponent)gameObjectComponent.GameObject.GetComponent(typeof(HealthViewComponent));
+                    (HealthView)gameObjectComponent.GameObject.GetComponent(typeof(HealthView));
 
                 healthViewComponent.TextMeshProUGUI.text = healthLogic.CurrentHealth + "/" + healthLogic.MaxHealth;
             }
