@@ -39,6 +39,7 @@ namespace Project.Scripts
         private ISystem _showingImpactSystem;
         private ISystem _updatingScoreSystem;
         private ISystem _movementViewSystem;
+        private ISystem _loosingSystem;
 
         private void Start()
         {
@@ -64,6 +65,7 @@ namespace Project.Scripts
             _prefabInstantiatorSystem = new PrefabInstantiatorSystem(_entityManager, _prefabTypes);
             _updatingScoreSystem = new UpdatingScoreSystem(_entityManager);
             _movementViewSystem = new MovementViewSystem(_entityManager);
+            _loosingSystem = new LoosingSystem(_entityManager);
         }
 
         private void Update()
@@ -99,6 +101,7 @@ namespace Project.Scripts
             _fieldManagerSystem.Execute();
 
             _movementViewSystem.Execute();
+            _loosingSystem.Execute();
         }
     }
 }
