@@ -45,7 +45,7 @@ namespace Project.Scripts.Area.Systems.Logic
                 {
                     if (fieldComponent.PositionsWithCard[x, y] == null)
                     {
-                        var randomNumber = UnityEngine.Random.Range(1, 5);
+                        var randomNumber = UnityEngine.Random.Range(1, 6);
                         switch (randomNumber)
                         {
                             case 1:
@@ -59,6 +59,9 @@ namespace Project.Scripts.Area.Systems.Logic
                                 break;
                             case 4:
                                 CreateSlowHealingPotion(fieldComponent, x, y);
+                                break;
+                            case 5:
+                                CreateSlowPoison(fieldComponent, x, y);
                                 break;
                             default: throw new Exception("card with this number doesn't exist");
                         }
@@ -166,6 +169,36 @@ namespace Project.Scripts.Area.Systems.Logic
             card.AddComponent(new NeedInstantiatingCardPrefabComponent(CardPrefabTypesId.Potion, positionWhereCardShouldBeInstantiated, slowRecoverPill.PotionImage));
             card.AddComponent(new FallingComponent());
             card.AddComponent(new HealingPotionComponent());
+        }
+
+        private void CreateSlowPoison(FieldComponent fieldComponent, int x, int y)
+        {
+            var card = _entityManager.CreateEntity();
+            card.AddComponent(new CardComponent());
+
+            PotionConfig slowPoisonConfig = null;
+            foreach (var potionConfig in _potionConfigs)
+            {
+                if (potionConfig.Id == "slowPoison")
+                {
+                    slowPoisonConfig = potionConfig;
+                }
+            }
+
+            card.AddComponent(new PotionCardComponent(slowPoisonConfig.ImpactDuration, slowPoisonConfig.ImpactForce));
+
+            int2 currentPositionRelativeFieldCenter = new int2(
+                x - Math.Abs(fieldComponent.MinRelativeCenterPositionX),
+                y - Math.Abs(fieldComponent.MinRelativeCenterPositionY));
+
+            card.AddComponent(new PositionRelativeFieldCenterComponent(currentPositionRelativeFieldCenter));
+
+            int2 positionWhereCardShouldBeInstantiated = new int2(currentPositionRelativeFieldCenter.x * 35,
+                currentPositionRelativeFieldCenter.y * 52);
+
+            card.AddComponent(new NeedInstantiatingCardPrefabComponent(CardPrefabTypesId.Poison, positionWhereCardShouldBeInstantiated, slowPoisonConfig.PotionImage));
+            card.AddComponent(new FallingComponent());
+            card.AddComponent(new ToxicPotionComponent());
         }
     }
 }

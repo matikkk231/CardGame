@@ -40,6 +40,8 @@ namespace Project.Scripts
         private ISystem _updatingScoreSystem;
         private ISystem _movementViewSystem;
         private ISystem _loosingSystem;
+        private ISystem _interactingWithPoisonCard;
+        private ISystem _toxicStatusProcessingSystem;
 
         private void Start()
         {
@@ -66,6 +68,8 @@ namespace Project.Scripts
             _updatingScoreSystem = new UpdatingScoreSystem(_entityManager);
             _movementViewSystem = new MovementViewSystem(_entityManager);
             _loosingSystem = new LoosingSystem(_entityManager);
+            _interactingWithPoisonCard = new InteractingWithPoisonSystem(_entityManager);
+            _toxicStatusProcessingSystem = new ToxicStatusProcessingSystem(_entityManager);
         }
 
         private void Update()
@@ -74,7 +78,6 @@ namespace Project.Scripts
             _cardGeneratorSystem.Execute();
             _cardPrefabInstantiatorSystem.Execute();
             _prefabInstantiatorSystem.Execute();
-            _healthViewSystem.Execute();
             _fieldManagerSystem.Execute();
             _checkingAbilityToInteractSystem.Execute();
 
@@ -83,6 +86,7 @@ namespace Project.Scripts
             _interactingWithEmptyCardsSystem.Execute();
             _interactingWithMonsterCardSystem.Execute();
             _interactingWithHealingPotionCardSystem.Execute();
+            _interactingWithPoisonCard.Execute();
 
             _turnDoneNotifierSystem.Execute();
 
@@ -94,6 +98,7 @@ namespace Project.Scripts
             _movementSystem.Execute();
 
             _healingStatusProcessingSystem.Execute();
+            _toxicStatusProcessingSystem.Execute();
             _turnFinishedNotifierSystem.Execute();
 
             _showingImpactSystem.Execute();
@@ -101,6 +106,7 @@ namespace Project.Scripts
             _fieldManagerSystem.Execute();
 
             _movementViewSystem.Execute();
+            _healthViewSystem.Execute();
             _loosingSystem.Execute();
         }
     }

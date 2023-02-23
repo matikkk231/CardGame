@@ -229,6 +229,8 @@ MonoBehaviour:
     Prefab: {fileID: 5607332371608951595, guid: 3a630eaa23ddf8845965c7ae54ddecf1, type: 3}
   - Id: 3
     Prefab: {fileID: 597860093925807052, guid: 3aad8e98a44672f4584ad58a8a76534c, type: 3}
+  - Id: 4
+    Prefab: {fileID: 6374246924519921197, guid: 093025081f84d0a4d99d7a408b6342ff, type: 3}
   _prefabTypes:
   - Prefab: {fileID: 6711646076514109433, guid: 565805bc2bcac9248b20b5a3d9488b56, type: 3}
     Id: 0
@@ -239,6 +241,7 @@ MonoBehaviour:
   _potionConfigs:
   - {fileID: 11400000, guid: e0b4d1d8a03478044ae12d6f4258cf25, type: 2}
   - {fileID: 11400000, guid: 26fbd526cd32d6e42b6c9e6145988c7c, type: 2}
+  - {fileID: 11400000, guid: 3945169f85e5eec449f0d9f896f89941, type: 2}
 --- !u!4 &768563007
 Transform:
   m_ObjectHideFlags: 0
