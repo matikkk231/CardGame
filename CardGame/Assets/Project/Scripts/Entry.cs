@@ -18,83 +18,55 @@ namespace Project.Scripts
         [SerializeField] private List<PotionConfig> _potionConfigs;
 
         private IEntityManager _entityManager;
+        private List<ISystem> _systems;
 
-        private ISystem _startInitializerSystem;
-        private ISystem _cardGeneratorSystem;
-        private ISystem _cardPrefabInstantiatorSystem;
-        private ISystem _prefabInstantiatorSystem;
-        private ISystem _healthViewSystem;
-        private ISystem _checkingAbilityToInteractSystem;
-        private ISystem _checkingInteractingTrySystem;
-        private ISystem _fieldManagerSystem;
-        private ISystem _interactingWithEmptyCardsSystem;
-        private ISystem _destroyingCardsSystem;
-        private ISystem _movementSystem;
-        private ISystem _interactingWithMonsterCardSystem;
-        private ISystem _fallingSystem;
-        private ISystem _interactingWithHealingPotionCardSystem;
-        private ISystem _turnDoneNotifierSystem;
-        private ISystem _turnFinishedNotifierSystem;
-        private ISystem _healingStatusProcessingSystem;
-        private ISystem _showingImpactSystem;
-        private ISystem _updatingScoreSystem;
 
         private void Start()
         {
             _entityManager = new EntityManager();
+            _systems = new List<ISystem>();
 
-            _startInitializerSystem = new StartInitializerSystem(_entityManager, _playerImage);
-            _cardGeneratorSystem = new CardGeneratorSystem(_entityManager, _monsterConfigs, _potionConfigs);
-            _cardPrefabInstantiatorSystem = new CardPrefabInstantiatorSystem(_entityManager, _cardPrefabTypes);
-            _healthViewSystem = new HealthViewSystem(_entityManager);
-            _checkingAbilityToInteractSystem = new CheckingAbilityToInteractSystem(_entityManager);
-            _checkingInteractingTrySystem = new CheckingInteractingTrySystem(_entityManager);
-            _fieldManagerSystem = new FieldManagerSystem(_entityManager);
-            _interactingWithEmptyCardsSystem = new InteractingWithEmptyCardsSystem(_entityManager);
-            _destroyingCardsSystem = new DestroyCardSystem(_entityManager);
-            _movementSystem = new MovingCardsSystem(_entityManager);
-            _interactingWithMonsterCardSystem = new InteractingWithMonsterSystem(_entityManager);
-            _fallingSystem = new FallingCardsSystem(_entityManager);
-            _interactingWithHealingPotionCardSystem = new InteractingWithHealingPotionCardSystem(_entityManager);
-            _turnDoneNotifierSystem = new TurnDoneNotifierSystem(_entityManager);
-            _turnFinishedNotifierSystem = new TurnFinishedNotifierSystem(_entityManager);
-            _healingStatusProcessingSystem = new HealingStatusProcessingSystem(_entityManager);
-            _showingImpactSystem = new ShowingPotionImpactSystem(_entityManager);
-            _prefabInstantiatorSystem = new PrefabInstantiatorSystem(_entityManager, _prefabTypes);
-            _updatingScoreSystem = new UpdatingScoreSystem(_entityManager);
+            _systems.Add(new StartInitializerSystem(_entityManager, _playerImage));
+            _systems.Add(new CardGeneratorSystem(_entityManager, _monsterConfigs, _potionConfigs));
+            _systems.Add(new CardPrefabInstantiatorSystem(_entityManager, _cardPrefabTypes));
+            _systems.Add(new PrefabInstantiatorSystem(_entityManager, _prefabTypes));
+            _systems.Add(new FieldManagerSystem(_entityManager));
+            _systems.Add(new CheckingAbilityToInteractSystem(_entityManager));
+
+            _systems.Add(new CheckingInteractingTrySystem(_entityManager));
+
+            _systems.Add(new InteractingWithEmptyCardsSystem(_entityManager));
+            _systems.Add(new InteractingWithMonsterSystem(_entityManager));
+            _systems.Add(new InteractingWithHealingPotionCardSystem(_entityManager));
+            _systems.Add(new InteractingWithPoisonSystem(_entityManager));
+
+            _systems.Add(new TurnDoneNotifierSystem(_entityManager));
+            _systems.Add(new DestroyCardSystem(_entityManager));
+            _systems.Add(new MovingCardsSystem(_entityManager));
+
+            _systems.Add(new FieldManagerSystem(_entityManager));
+            _systems.Add(new FallingCardsSystem(_entityManager));
+            _systems.Add(new MovingCardsSystem(_entityManager));
+
+            _systems.Add(new HealingStatusProcessingSystem(_entityManager));
+            _systems.Add(new ToxicStatusProcessingSystem(_entityManager));
+            _systems.Add(new TurnFinishedNotifierSystem(_entityManager));
+
+            _systems.Add(new ShowingPotionImpactSystem(_entityManager));
+            _systems.Add(new UpdatingScoreSystem(_entityManager));
+            _systems.Add(new FieldManagerSystem(_entityManager));
+
+            _systems.Add(new MovementViewSystem(_entityManager));
+            _systems.Add(new HealthViewSystem(_entityManager));
+            _systems.Add(new LoosingSystem(_entityManager));
         }
 
         private void Update()
         {
-            _startInitializerSystem.Execute();
-            _cardGeneratorSystem.Execute();
-            _cardPrefabInstantiatorSystem.Execute();
-            _prefabInstantiatorSystem.Execute();
-            _healthViewSystem.Execute();
-            _fieldManagerSystem.Execute();
-            _checkingAbilityToInteractSystem.Execute();
-
-            _checkingInteractingTrySystem.Execute();
-
-            _interactingWithEmptyCardsSystem.Execute();
-            _interactingWithMonsterCardSystem.Execute();
-            _interactingWithHealingPotionCardSystem.Execute();
-
-            _turnDoneNotifierSystem.Execute();
-
-            _destroyingCardsSystem.Execute();
-            _movementSystem.Execute();
-
-            _fieldManagerSystem.Execute();
-            _fallingSystem.Execute();
-            _movementSystem.Execute();
-
-            _healingStatusProcessingSystem.Execute();
-            _turnFinishedNotifierSystem.Execute();
-
-            _showingImpactSystem.Execute();
-            _updatingScoreSystem.Execute();
-            _fieldManagerSystem.Execute();
+            foreach (var system in _systems)
+            {
+                system.Execute();
+            }
         }
     }
 }

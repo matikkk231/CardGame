@@ -10,8 +10,8 @@ namespace Project.Scripts.Area.Systems.Logic.View
 {
     public class HealthViewSystem : ISystem
     {
-        private IEntityManager _entityManager;
-        private List<Type> _groupOfComponents;
+        private readonly IEntityManager _entityManager;
+        private readonly List<Type> _groupOfComponents;
 
         public HealthViewSystem(IEntityManager entityManager)
         {

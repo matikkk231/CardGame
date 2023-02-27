@@ -8,8 +8,8 @@ namespace Project.Scripts.Area.Systems.Logic
 {
     public class HealingStatusProcessingSystem : ISystem
     {
-        private IEntityManager _entityManager;
-        private List<Type> _cardsWhichNeedHealing;
+        private readonly IEntityManager _entityManager;
+        private readonly List<Type> _cardsWhichNeedHealing;
 
         public HealingStatusProcessingSystem(IEntityManager entityManager)
         {

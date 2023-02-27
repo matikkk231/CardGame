@@ -14,6 +14,7 @@ namespace Project.Scripts.Area.Systems.View.PrefabInstantiator
         private readonly IEntityManager _entityManager;
         private readonly List<Type> _needfulGroup;
         private readonly List<CardPrefabType> _cardPrefabTypes;
+        private readonly List<Type> _movingCards;
 
         public CardPrefabInstantiatorSystem(IEntityManager entityManager, List<CardPrefabType> cardPrefabTypes)
         {
@@ -21,34 +22,41 @@ namespace Project.Scripts.Area.Systems.View.PrefabInstantiator
             _entityManager = entityManager;
             _needfulGroup = new List<Type>();
             _needfulGroup.Add(typeof(NeedInstantiatingCardPrefabComponent));
+            _movingCards = new List<Type>();
+            _movingCards.Add(typeof(NeedMovingViewComponent));
         }
 
         public void Execute()
         {
-            var entities = _entityManager.GetEntitiesOfGroup(_needfulGroup);
-            foreach (var entity in entities)
+            var movingCards = _entityManager.GetEntitiesOfGroup(_movingCards);
+
+            if (movingCards.Count == 0)
             {
-                NeedInstantiatingCardPrefabComponent needInstantiatingCardPrefabComponentComponent =
-                    (NeedInstantiatingCardPrefabComponent)entity.GetComponent(typeof(NeedInstantiatingCardPrefabComponent));
-                foreach (var prefabType in _cardPrefabTypes)
+                var entities = _entityManager.GetEntitiesOfGroup(_needfulGroup);
+                foreach (var entity in entities)
                 {
-                    if (prefabType.Id == needInstantiatingCardPrefabComponentComponent.CardPrefabTypeId)
+                    NeedInstantiatingCardPrefabComponent needInstantiatingCardPrefabComponentComponent =
+                        (NeedInstantiatingCardPrefabComponent)entity.GetComponent(typeof(NeedInstantiatingCardPrefabComponent));
+                    foreach (var prefabType in _cardPrefabTypes)
                     {
-                        var gameObject = GameObject.Instantiate(prefabType.Prefab);
-                        var contentImageRenderer = (ContentImageView)gameObject.GetComponent(typeof(ContentImageView));
-                        contentImageRenderer.ContentImageRenderer.sprite =
-                            needInstantiatingCardPrefabComponentComponent.CardContent;
-                        int newPositionOfObjectX =
-                            needInstantiatingCardPrefabComponentComponent.PositionWhereShouldBeInstantiated.x;
-                        int newPositionOfObjectY =
-                            needInstantiatingCardPrefabComponentComponent.PositionWhereShouldBeInstantiated.y;
-                        Vector3 newPositionOfObject =
-                            new Vector3(newPositionOfObjectX, newPositionOfObjectY, 0);
-                        gameObject.transform.position = newPositionOfObject;
+                        if (prefabType.Id == needInstantiatingCardPrefabComponentComponent.CardPrefabTypeId)
+                        {
+                            var gameObject = GameObject.Instantiate(prefabType.Prefab);
+                            var contentImageRenderer = (ContentImageView)gameObject.GetComponent(typeof(ContentImageView));
+                            contentImageRenderer.ContentImageRenderer.sprite =
+                                needInstantiatingCardPrefabComponentComponent.CardContent;
+                            int newPositionOfObjectX =
+                                needInstantiatingCardPrefabComponentComponent.PositionWhereShouldBeInstantiated.x;
+                            int newPositionOfObjectY =
+                                needInstantiatingCardPrefabComponentComponent.PositionWhereShouldBeInstantiated.y;
+                            Vector3 newPositionOfObject =
+                                new Vector3(newPositionOfObjectX, newPositionOfObjectY, 0);
+                            gameObject.transform.position = newPositionOfObject;
 
 
-                        entity.AddComponent(new GameObjectComponent(gameObject));
-                        entity.RemoveComponent(needInstantiatingCardPrefabComponentComponent.GetType());
+                            entity.AddComponent(new GameObjectComponent(gameObject));
+                            entity.RemoveComponent(needInstantiatingCardPrefabComponentComponent.GetType());
+                        }
                     }
                 }
             }

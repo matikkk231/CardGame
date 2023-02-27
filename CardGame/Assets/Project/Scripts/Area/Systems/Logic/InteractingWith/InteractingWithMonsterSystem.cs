@@ -73,6 +73,15 @@ namespace Project.Scripts.Area.Systems.Logic
                             scoreComponent.ScoreValue += monsterHealthComponent.MaxHealth;
                         }
                     }
+                    else
+                    {
+                        healthPlayerComponent.CurrentHealth = 0;
+                        var fields = _entityManager.GetEntitiesOfGroup(_fields);
+                        foreach (var field in fields)
+                        {
+                            field.AddComponent(new LoseComponent());
+                        }
+                    }
 
                     monster.RemoveComponent(typeof(InteractProcessingComponent));
                 }
